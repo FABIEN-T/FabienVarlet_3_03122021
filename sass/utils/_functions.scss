@@ -1,0 +1,20 @@
+@function pastel ($clr) {
+    $hue: hue($clr);
+    $sat: 100%;
+    $light: 96%;
+    $pastel: hsl($hue, $sat, $light);
+    @return $pastel;
+}
+
+@function dark ($drk) {
+    $hue: hue($drk);
+    $sat: 100%;
+    $light: 26%;
+    $dark: hsl($hue, $sat, $light);
+    @return $dark;
+}
+
+@function shader-grey ($gry){
+    $shader-grey: adjust-color(black, $hue:0, $saturation:0, $lightness: $gry);
+    @return $shader-grey;
+}

@@ -1,0 +1,35 @@
+.footer {
+    padding: 15px 20px 30px;
+    background-color: shader-grey(21%);
+    color: $white;
+    &__title {
+        text-align: center;
+        @media (max-width: 599px) {
+            text-align: start;
+        }
+        font-family: Shrikhand, Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        font-weight: lighter;
+        margin-bottom: 22px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @media (max-width: 599px) {
+            flex-direction: column;
+        }
+        list-style-type: none;
+        padding-left: 0px; 
+        }
+    &__item {
+            margin-bottom: 8px;
+    }
+    &__link {
+        color: $white;
+    }
+    &__icon {        
+        font-size: 80%;
+        width: 25px;
+    }
+}
