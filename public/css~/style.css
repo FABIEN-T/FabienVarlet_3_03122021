@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
 body {
   max-width: 1920px;
   margin: 0px auto;
@@ -26,7 +25,19 @@ a {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.header {
+  position: relative;
+  background-color: #f58300;
+  margin: -22px 0px;
+}
+.header__icon {
+  font-size: 120%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
 .header__title {
+  line-height: 200%;
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -301,4 +312,96 @@ a {
 }
 .menu:nth-child(n+3):nth-child(-n+4) .menu__new {
   display: none;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page__image {
+  height: 200px;
+}
+.page__image img {
+  max-width: 105%;
+}
+.page__restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px 0px 20px;
+}
+.name__title {
+  font-family: Shrikhand, Arial, Helvetica, sans-serif;
+}
+.name__heart {
+  margin-right: 30px;
+}
+
+.type {
+  margin: 20px 20px 50px 20px;
+}
+.type__title {
+  font-size: 120%;
+  font-weight: 300;
+  border-bottom: #99E2D0 solid 3px;
+  width: 48px;
+}
+
+.choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0px 0px 15px;
+  padding: 12px 0px 12px 10px;
+  border-radius: 15px;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 3px #ededed;
+          box-shadow: 3px 3px 3px #ededed;
+}
+.choice__text {
+  margin: -18px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.choice__precision {
+  margin-top: -15px;
+  font-weight: 300;
+}
+.choice__prix {
+  margin-top: -15px;
+  margin-right: 22px;
 }

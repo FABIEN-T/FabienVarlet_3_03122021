@@ -3,90 +3,92 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+      
+        <link rel="stylesheet" href="./css~/style.css"/> 
         
-        <link rel="stylesheet" href="./css/style.css"/>        
-        <title>La palette du goût</title>    
-                
-
-        
-
+        <title>La palette du goût</title> 
     </head>
 
     <body>
-        <main>
-            <header class="header">
-                <h1 class="header__title">ohmyfood</h1>
-            </header>
+        <header class="header">
+            <a href="index.html">
+                <i class="fas fa-arrow-left header__icon header_icon--flyover"></i>
+            </a>
+            <h1 class="header__title">ohmyfood</h1>
+        </header>
 
-            <div class="header"></div>
-            <h2>La palette du goût</h2>
+        <main class="page">
+            
+            <div class="page__image">
+                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
+            </div>
+            
+            <div class="page__restaurant">
+                <section class="name">
+                    <h2 class="name__title">La palette du goût</h2>
+                    <div class="name__heart">
+                        <a href="#">
+                            <i class="far fa-heart menu__icon menu__icon--flyover "></i>                                
+                        </a>
+                    </div>
+                </section>
 
-            <section class="starter">   
-                <div class="list">
-                    <p class="list__title">ENTRÉES</p>
-                    <div class="list__items">
-                        <div class="list__items-1">
-                            <div>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zests d'orange</p>
-                            </div>
-                        <div class="list__prix-1">25€</div>
-                    </div>
-                </div>
+                <section class="elements">
+                    <div class="type"> 
+                        <p class="type__title">ENTRÉES</p>  
 
-                <div class="list">
-                    <p class="list__title">ENTRÉES</p>
-                    <div class="list__items">
-                        <div class="list__items-1">
-                            <div>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zests d'orange</p>
+                        <div class="choice">
+                            <div class="choice__text">
+                                <h3 class="choice__title">Fricassée d'escargot</h3>
+                                <div class="choice__precision">Au piment d'espelette</div>
                             </div>
-                        <div class="list__prix-1">25€</div>
-                    </div>
-                </div>
-                
-                <div class="list">
-                    <p class="list__title">ENTRÉES</p>
-                    <div class="list__items">
-                        <div class="list__items-1">
-                            <div>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zests d'orange</p>
-                            </div>
-                        <div class="list__prix-1">25€</div>
-                    </div>
-                </div>
+                            <div class="choice__prix">25€</div>
+                        </div>
 
-                <div class="list">
-                    <p class="list__title">ENTRÉES</p>
-                    <div class="list__items">
-                        <div class="list__items-1">
-                            <div>
-                                <h3>Tartare de poulpe acidulé</h3>
-                                <p>Aux zests d'orange</p>
+                        <div class="choice">
+                            <div class="choice__text">
+                                <h3 class="choice__title">Foie gras de canard mi-cuit</h3>
+                                <div class="choice__precision">Et ses copeaux de truffe noire</div>
                             </div>
-                        <div class="list__prix-1">25€</div>
+                            <div class="choice__prix">35€</div>
+                        </div>
+
+                        <div class="choice">
+                            <div class="choice__text">
+                                <h3 class="choice__title">Oeuf au plat</h3>
+                                <div class="choice__precision">Assaisonné à la truffe sur lit de caviar</div>
+                            </div>
+                            <div class="choice__prix">35€</div>
+                        </div>
                     </div>
-                </div>
-                    
-                </div>
-                
-            </section>
+
+
+
+                </section>
+            </div>
             
 
 
-            <footer class="footer">
-                <h2 class="footer__title">ohmyfood</h2>
-                <ul class="footer__list">
-                    <li class="footer__item"> <a href="#" class="footer__link"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a> </li>
-                    <li class="footer__item"> <a href="#" class="footer__link"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a> </li>
-                    <li class="footer__item"> <a href="#" class="footer__link">Mentions légales</a> </li>
-                    <li class="footer__item"> <a href="#" class="footer__link">Contact</a> </li>
-                </ul>                          
-            </footer>
+            
         </main>
+
+        <footer class="footer">
+            <h2 class="footer__title">ohmyfood</h2>
+            <ul class="footer__list">
+                <li class="footer__item"> <a href="#" class="footer__link"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a> </li>
+                <li class="footer__item"> <a href="#" class="footer__link"><i class="fas fa-hands-helping footer__icon"></i>Devenir partenaire</a> </li>
+                <li class="footer__item"> <a href="#" class="footer__link">Mentions légales</a> </li>
+                <li class="footer__item"> <a href="#" class="footer__link">Contact</a> </li>
+            </ul>                          
+        </footer>
         
     </body>
 </html>
+
+
+
+<!-- <div class="choice__text">
+    <h3 class="choice__title">Tartare de poulpe acidulé</h3>
+    <p class="choice__precision">Aux zests d'orange</p>
+</div>
+<div class="choice__prix-1">25€</div> -->

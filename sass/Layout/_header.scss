@@ -1,7 +1,20 @@
 .header {
-    &__title{
-    font-family: Shrikhand, Arial, Helvetica, sans-serif;
-    text-align: center;
-    // color: aqua;
+    // box-sizing: border-box;    
+    position: relative;
+    background-color: rgb(245, 131, 0);
+    margin: -22px 0px;
+    // border: green solid 1px;
+    &__icon {
+        font-size: 120%;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    &__title {
+        line-height: 200%;
+        font-family: Shrikhand, Arial, Helvetica, sans-serif;
+        text-align: center;
+        // border: rgb(23, 9, 148) solid 1px;
     }
 }
+
