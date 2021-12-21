@@ -575,6 +575,11 @@ a {
           flex-direction: column;
   margin: 0px auto;
 }
+.check2 * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
 .check2__button {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -583,24 +588,6 @@ a {
   margin-bottom: 10px;
   background-color: chocolate;
   color: white;
-}
-.check2__button:hover {
-  color: cyan;
-}
-.check2__button:hover + .check2__cartouche .check2__precision2 {
-  color: blue;
-}
-.check2__button:hover + .check2__cartouche .check2__prix {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-.check2__button:hover + .check2__cartouche .check2__container {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-.check2__button:hover + .check2__cartouche .check2__icon {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 .check2__cartouche {
   display: -webkit-box;
@@ -611,8 +598,32 @@ a {
   width: max-content;
   border-radius: 20px;
   overflow: hidden;
-  border: red solid 1px;
-  margin-bottom: 10px;
+  margin: 100px auto;
+}
+.check2__cartouche * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.check2__cartouche:hover .check2__precision2--rollover {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  color: blue;
+}
+.check2__cartouche:hover .check2__prix--rollover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  -webkit-transform: translateX(-63px);
+          transform: translateX(-63px);
+}
+.check2__cartouche:hover .check2__container--rollover {
+  -webkit-transform: translateX(-63px);
+          transform: translateX(-63px);
+}
+.check2__cartouche:hover .check2__icon--rollover {
+  -webkit-transform: rotate(2turn);
+          transform: rotate(2turn);
 }
 .check2__precision2 {
   background-color: lemonchiffon;
@@ -620,17 +631,19 @@ a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  padding: 20px 0px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .check2__prix {
+  padding: 0px 20px;
+  background-color: #ffce95;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .check2__container {
   -webkit-box-sizing: border-box;
@@ -640,20 +653,21 @@ a {
   width: -moz-max-content;
   width: max-content;
   padding: 20px;
+  margin-right: -64px;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 .check2__icon {
   color: white;
   font-size: 1.5rem;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }

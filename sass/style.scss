@@ -124,9 +124,6 @@
         @include mobile-only {
             text-align: start;
         }
-        // @media (max-width: 599px) {
-        //     text-align: start;
-        // }
     }
     &__card {
         display: flex;
@@ -420,6 +417,10 @@
     display: flex;
     flex-direction: column;
     margin: 0px auto;
+    * {
+        
+        flex: 1 1 auto;
+    }
     
     &__button {
         // margin-left: 150px;
@@ -428,47 +429,51 @@
         margin-bottom: 10px;
         background-color: chocolate;
         color: white;
-        &:hover{
-            color: cyan;
-            & + .check2__cartouche .check2__precision2 {
-                // flex-grow: 0;
-                // flex-basis: 0;
-                color: blue;
-            }
-            & + .check2__cartouche .check2__prix {
-                transform: translateX(-50px);
-            }
-            & + .check2__cartouche .check2__container {
-                transform: translateX(-50px);
-            }
-            & + .check2__cartouche .check2__icon {
-                transform: rotate(360deg);
-            }
-        }
+        
     
     }
     &__cartouche {
         display: flex;
         width: max-content;
-        // background-color: gold;
         border-radius: 20px;        
         overflow: hidden;
-        border: red solid 1px;
-        margin-bottom: 10px;
+        margin: 100px auto;
+        flex: 1 1 auto;
+        }
+        &:hover{
+            & .check2__precision2--rollover {
+                // flex-grow: 0;
+                flex: 1 1 0;
+                color: blue;
+            }
+            &  .check2__prix--rollover {
+                // flex: 1 1 0;
+                transform: translateX(-63px);
+            }
+            &  .check2__container--rollover {
+                transform: translateX(-63px);
+            }
+            &  .check2__icon--rollover {
+                transform: rotate(2turn);
+            }
+        }
     }
     &__precision2 {
         background-color: lemonchiffon;
         font-weight: 300;
         width: max-content;
+        padding: 20px 0px;
         // flex-grow: 1;
         // flex-basis: auto;
         white-space: nowrap;
         text-overflow: ellipsis;
-        overflow: hidden
+        // overflow: hidden
     }
     &__prix {
+        padding: 0px 20px;
+        background-color: rgb(255, 206, 149);
         transform: translateX(0px);
-        transition: transform 1000ms ease-in-out;
+        transition: transform 400ms ease-in-out;
     }
 
     &__container {
@@ -476,15 +481,16 @@
         background-color: $tertiary;
         width: max-content;
         padding: 20px;
+        margin-right: -64px;
         // margin-left: 100px;
         transform: translateX(0px);
-        transition: transform 1000ms ease-in-out;
+        transition: transform 400ms ease-in-out;
     }
     &__icon {
         color: white;
         font-size: 1.5rem;
         transform: rotate(0deg);
-        transition: transform 1000ms ease-in-out;
+        transition: transform 400ms ease-in-out;
     }
 
 }
@@ -492,91 +498,17 @@
 
 
 
-// <i class="fas fa-check-circle"></i>
-// f058
-
-// <i class="far fa-check-circle"></i>
-// f058
-
-
-
-// .pochoir {
-//     font-size: 400%;
-//     font-weight: bold;
-//     background-clip: text;
-//     color: transparent;    
-//     background-image: linear-gradient(30deg, $secondary, $primary);
-// }
 
 
 
 
-// .menu__icon2::before {
-    // font-family: "Font Awesome 5 free";
-    // font-weight: 900;
-    // content: "\f004";
-// }
 
-// .menu {
-//     &__icon2 {
-//         display: inline-block;
-//         position: relative;
-//         font-size: 95%;      
-//         font-family: "Font Awesome 5 free";
-//         font-weight: 400;
-//         content: "\f004";
-//         opacity: 1;
-        
-//         &__flyover:hover {            
-//             opacity: 0;
-//         }
-        
-//             &:hover{
-//                 &::after {                
-//                  opacity: 1;
-//             }
-//         }
-//         &--flyover::after {
-//             position: absolute;
-//             left: 0px;
-//             font-family: "Font Awesome 5 free";
-//             font-weight: 900;
-//             content: "\f004";
-//             font-size: 100%;
-//             background-clip: text;
-//             color: transparent;    
-//             background-image: linear-gradient(30deg, $secondary, $primary);
-//             opacity: 0;
-//             transition: opacity 400ms;                  
-//             }
-//     }
-// }
 
-// .pochoir{
-    
-//     &__p {
-//         opacity: 1;
-//         position: relative;
-//         transition: opacity 1000ms;
-//         &--flyover:hover {
-//             opacity: 0;
-//             transition: opacity 1000ms;
-//         }
-//         &--flyover::after {
-//             position: absolute;
-//             content: "ça_va_?";
-//             opacity: 0;
-//             background-clip: text;
-//             color: transparent;    
-//             background-image: linear-gradient(30deg, $secondary, $primary);
-//             transition: opacity 1000ms;
-//         }
-//         &--flyover:hover::after {
-//             opacity: 1;
-           
-//         }
-//     }
-// }
+
+
+
+
+
 
 
 
