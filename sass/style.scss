@@ -1,12 +1,14 @@
+
+
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/functions";
 
 @import "./base/base";
 
-
 @import "./layout/header";
 @import "./layout/footer";
+@import "./pages/restaurants";
 
 .banner {
     &__place {
@@ -191,10 +193,17 @@
         right: 25px;
         bottom: 30px;
         &:hover {
-            .menu__icon--flyover {
-                opacity: 0;
-            }
+            // .menu__icon--flyover {
+            //     opacity: 0;
+            // }
             .menu__icon-solid--flyover {
+                opacity: 1;
+            }
+            .menu__icon-white--flyover {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+            .menu__icon-white-solid {
                 opacity: 1;
             }
         }               
@@ -202,17 +211,43 @@
 
     &__icon {
         position: absolute;
+        left: 0px;
         font-size: 1.5rem;
-        opacity: 1;
-        transition: opacity 400ms; 
+        // opacity: 1;
+        // transition: opacity 1000ms; 
     }
+    &__icon-white {
+        position: absolute;
+        left: 0px;
+        top: 0px;       
+        font-size: 1.5rem;
+        color: white;
+        opacity: 0;
+        transform: translateY();
+        // transition: opacity 1000ms; 
+    }
+    &__icon-white-solid {
+        position: absolute;
+        left: 0px;
+        top: 0px;       
+        font-size: 1.5rem;
+        color: white;
+        opacity: 0;
+        // transition: opacity 1000ms; 
+    }
+
+
     &__icon-solid {
         font-size: 1.5rem;
         background-clip: text;
         color: transparent; 
         background-image: linear-gradient(30deg, $secondary, $primary);
         opacity: 0;
-        transition: opacity 400ms;
+        // transition: opacity 400ms;
+        // transform: scaleY(0);    
+        // transform-origin: bottom;
+        // transition: transform 1000ms;
+
     }
     &:nth-child(n+3):nth-child(-n+4) .menu__new{
         display: none;
@@ -224,276 +259,6 @@
                         // Page
 // ******************************************************************************
 
-.page {
-    display: flex;
-    flex-direction: column;
-    // margin: 0px auto;
-    &__image {
-        height: 200px;
-        & img{
-            max-width: 100%;
-        }
-    }
-    &__restaurant {
-        display: flex;
-        flex-direction: column;
-        background-color: $grey-bkgd;
-        border-radius: 50px 50px 0px 0px;
-    }
-    &__button {
-        text-align: center;
-        margin: 30px auto 70px;
-        
-    }
-
-    &__gradient {        
-        padding: 15px;        
-        width: 185px; 
-        color: $white;
-        border-radius: 30px; 
-        background: linear-gradient(170deg, $secondary, $primary);
-        box-shadow: 2px 2px 3px shader-grey(76%);
-        transform: scale(1);
-        transition: transform 400ms;
-        &:hover {
-            transform: scale(1.10);
-            background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
-            box-shadow: -1px -1px 6px shader-grey(76%), 2px 2px 6px shader-grey(76%);
-        }        
-    } 
-}
-
-.name {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    margin: 20px 20px 0px 20px;
-    &__title {
-        font-family: Shrikhand, Arial, Helvetica, sans-serif;
-    }
-    &__heart {
-        position: absolute;
-        right: 24px;
-        top: 24px;
-        &:hover {
-            .menu__icon--flyover {
-                opacity: 0;
-            }
-            .menu__icon-solid--flyover {
-                opacity: 1;
-            }
-        } 
-    }
-}
-
-.type {
-    margin: 20px 20px 20px 20px;
-    &__title {
-        font-size: 120%;
-        font-weight: 300;
-        border-bottom: $tertiary solid 3px;
-        width: 48px;
-    }
-    
-}
-
-// $choice-duration: 700ms;
-// $delay: 300ms;
-// $choice-number: 4;
-
-@keyframes animation-choice {
-    0% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    
-    80% {
-        transform: translateY(0px);
-    }   
-
-    100% {
-        opacity: 1;
-    }   
-}
-
-.choice {
-    cursor: pointer;
-    &:hover {
-        .choice__text {
-            // flex-basis: 0;
-            width: auto;
-        }
-        .choice__prix {
-            transform: translateX(-32px)
-        }
-        .choice__check {
-            transform: translateX(-32px)
-        }
-        // &::after {
-        //     transform: translateX(-32px);
-        // }
-    }
-
-    // &__prix--rollover::after {
-    //     content:"ha";
-    //     margin-left: 30px;
-    // }
-
-
-
-    &__load {
-        animation: animation-choice ease-in-out $choice-duration backwards;
-        @for $i from 1 through $choice-number {
-            &--#{$i} {
-                animation-delay: $delay * $i;
-            }
-        }
-    }
-
-    &__config {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin: 0px 0px 15px;
-        padding: 12px 0px 12px 10px;
-        border-radius: 15px;
-        background-color: $white;
-        box-shadow: 3px 3px 3px shader-grey(93%);
-    }
-    
-    
-        
-    &__text {
-        margin: -18px 0px 0px;
-        display: flex;
-        flex-direction: column;
-        // flex-basis: auto;
-        width: min-content;
-    }
-    &__title {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    &__precision {
-        margin-top: -15px;
-        font-weight: 300;
-        // min-width: 100px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    &__prix-check{        
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-
-    &__prix {
-        margin-top: -15px;
-        margin-right: 22px; 
-        transition: transform 400ms;       
-    }
-    // &__check {
-    //     // margin-left: 50px;
-    //     width: 50px;
-    //     height: 50px;
-    //     background-color: $tertiary;
-    //     transition: transform 400ms;
-    // }
-}
-
-
-
-
-
-
-
-.check2 {
-    
-    // width: 200px;
-    // height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    * {
-        
-        flex: 1 1 auto;
-    }
-    
-    &__button {
-        // margin-left: 150px;
-        width: max-content;
-        padding: 20px;
-        margin-bottom: 10px;
-        background-color: chocolate;
-        color: white;
-        
-    
-    }
-    &__cartouche {
-        display: flex;
-        width: max-content;
-        border-radius: 20px;        
-        overflow: hidden;
-        margin: 100px auto;
-        flex: 1 1 auto;
-        }
-        &:hover{
-            & .check2__precision2--rollover {
-                // flex-grow: 0;
-                flex: 1 1 0;
-                color: blue;
-            }
-            &  .check2__prix--rollover {
-                // flex: 1 1 0;
-                transform: translateX(-63px);
-            }
-            &  .check2__container--rollover {
-                transform: translateX(-63px);
-            }
-            &  .check2__icon--rollover {
-                transform: rotate(2turn);
-            }
-        }
-    }
-    &__precision2 {
-        background-color: lemonchiffon;
-        font-weight: 300;
-        width: max-content;
-        padding: 20px 0px;
-        // flex-grow: 1;
-        // flex-basis: auto;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        // overflow: hidden
-    }
-    &__prix {
-        padding: 0px 20px;
-        background-color: rgb(255, 206, 149);
-        transform: translateX(0px);
-        transition: transform 400ms ease-in-out;
-    }
-
-    &__container {
-        box-sizing: border-box;
-        background-color: $tertiary;
-        width: max-content;
-        padding: 20px;
-        margin-right: -64px;
-        // margin-left: 100px;
-        transform: translateX(0px);
-        transition: transform 400ms ease-in-out;
-    }
-    &__icon {
-        color: white;
-        font-size: 1.5rem;
-        transform: rotate(0deg);
-        transition: transform 400ms ease-in-out;
-    }
-
-}
 
 
 
