@@ -1,0 +1,243 @@
+
+.banner {
+    &__place {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 18px 0px;
+        background-color: shader-grey(92%);
+        box-shadow: inset 0px 3px 3px shader-grey(76%);
+    }
+    &__icon {
+        margin-right: 10px;
+    }
+}
+
+.presentation {    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin-bottom: 0px;
+    background-color: shader-grey(96%);
+    &__title { 
+        @include mobile-only {
+            padding: 0px 70px;
+        }
+        // @media (max-width: 599px) {
+        //     padding: 0px 70px;
+        // }
+    }
+    &__paragraph {  
+        margin: -6px auto -4px;      
+        font-weight: 300;
+        @include mobile-only {
+            padding: 0px 20px;
+        }
+        // line-height: 5px;
+    }
+    &__gradient {        
+        padding: 15px;
+        margin: 40px auto;
+        width: 185px; 
+        color: $white;
+        border-radius: 30px; 
+        background: linear-gradient(170deg, $secondary, $primary);
+        box-shadow: 2px 2px 3px shader-grey(76%);
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+            transform: scale(1.10);
+            background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
+            box-shadow: -1px -1px 6px shader-grey(76%), 2px 2px 6px shader-grey(76%);
+         }        
+    }    
+}
+
+.functioning {
+    margin: 0px auto 70px;
+    padding: 0px 20px;
+    // max-width: 335px;
+    &__title {        
+        text-align: center;
+        margin-bottom: 40px;
+        @include mobile-only {
+            text-align: start;
+        }
+        // @media (max-width: 599px) {
+        //     text-align: start;
+        // }    
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        width: 305px;
+        margin: 0px auto 30px;
+        padding: 20px 0px;
+        border-radius: 20px;
+        background-color: shader-grey(96%);
+        box-shadow: -1px -1px 15px shader-grey(93%), 2px 2px 3px shader-grey(93%);
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover {
+            background-color: pastel($primary);
+            .functioning__icon--color {color: $primary;}
+            transform: scale(1.05);
+            
+        }    
+    }
+    &__round{
+        position: relative;
+        left: -15px;
+        font-size: 90%;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 25px;
+        color: $white;
+        background-color: $primary;
+        margin-right: 15px;
+    }
+    &__icon {
+        margin-right: 30px;
+        color: shader-grey(49%);
+    }
+}
+
+.list-menus {
+    background-color: shader-grey(96%);
+    padding: 30px 20px 40px;
+    &__title {
+        text-align: center;
+        @include mobile-only {
+            text-align: start;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+    }
+}
+
+
+.menu {
+    flex: 23%;
+    max-width: 23%;
+    @include tablette {
+        text-align: start;
+        flex-direction: row;
+        flex: 48%;
+        max-width: 48%;
+    }
+    @include mobile-only {
+        min-width: 100%;
+    }  
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px shader-grey(93%);
+    overflow: hidden;
+    &__image {
+        position: relative;
+        height: 170px;
+        overflow: hidden;
+        img {    
+            position: absolute;
+            bottom: 0px;           
+            max-width: 100%;
+        }
+    }
+    &:nth-child(2) img {
+        bottom: -98px;
+    }
+    &__new{
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        text-align: center;
+        padding: 6px 12px;
+        border-radius: 3px;
+        background-color: $tertiary;
+        color: dark($tertiary);
+    } 
+    &__text {            
+        padding: 16px 0px 16px 10px;
+        background-color: $white;
+    }
+    &__title {
+        margin: 0px auto;        
+    }
+    &__paragraph {
+        font-weight: lighter;
+        margin: 2px auto 0px;
+    }     
+    &__heart {
+        position: absolute;
+        right: 25px;
+        bottom: 30px;
+        &:hover {
+            .menu__icon-solid--flyover {
+                transform: scale(1);
+            }
+            .menu__icon-contour--flyover {
+                transform: scale(1.02);
+            }
+            // .menu__icon-solid--flyover {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+            // .menu__icon-contour--flyover {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+        }               
+    }
+
+    &__icon {
+        font-size: 1.5rem; 
+    }
+    
+    
+
+    &__icon-solid {
+        position: absolute;
+        left: 0px;
+        bottom: 1px;
+        font-size: 1.5rem;
+        background-clip: text;
+        color: transparent; 
+        background-image: linear-gradient(30deg, $secondary, $primary);
+        // width: 0px;
+        // height: 0px;
+        // transition: all ease-in-out 1s;
+        transform: scale(0);
+        transform-origin: bottom;
+        transition: transform ease-in-out 1000ms;
+    }
+
+    &__icon-contour {
+        position: absolute;
+        left: 0px;
+        bottom: 1px;
+        font-size: 1.5rem;
+        background-clip: text;
+        color: transparent; 
+        background-image: linear-gradient(30deg, $secondary, $primary);
+        // width: 0px;
+        // height: 0px;
+        // transition: all ease-in-out 1s;
+        transform: scale(0);    
+        transform-origin: bottom;
+        transition: transform ease-in-out 1000ms;
+    }
+
+    &:nth-child(n+3):nth-child(-n+4) .menu__new{
+        display: none;
+    }
+}
