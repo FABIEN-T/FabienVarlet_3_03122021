@@ -1,7 +1,7 @@
-$breakpoints:(
+$breakpoints: (
     mobile: 599px,
     tablette: 1200px
-);
+    );
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -10,13 +10,15 @@ $grey-bkgd: #f6f6f6;
 $white: white;
 $black: black;
 
-// $grey-place-shdw: #c2c2c2;
-// $grey-place-bkgd: #eaeaea;
-// $grey-box-shdw: #ececec;
-// $grey-bkgd: #f6f6f6;
-// $footer: #353535;
+$grey-place-shdw: #c2c2c2;
+$grey-place-bkgd: #eaeaea;
+$grey-box-shdw: #ececec;
+$grey-bkgd: #f6f6f6;
+$grey-icon: #808080;
+$footer: #353535;
 
-// Apparitions menus
+// ******************Apparitions menus**********************
+
 $choice-duration: 800ms;
 $delay: 400ms;
 $choice-number: 4;
