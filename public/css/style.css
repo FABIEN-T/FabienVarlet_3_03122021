@@ -103,7 +103,7 @@ a {
 .loader__background {
   width: 100%;
   height: 100%;
-  background-color: #9356DC;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +119,6 @@ a {
           animation: charge ease-in-out 3000ms 250ms forwards;
 }
 .loader__disk {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,8 +136,8 @@ a {
   border: #99E2D0 solid 5px;
   border-radius: 50%;
   background-image: linear-gradient(30deg, #FF79DA, #9356DC);
-  -webkit-animation: charge-disk ease-in-out 3000ms 250ms both;
-          animation: charge-disk ease-in-out 3000ms 250ms both;
+  -webkit-animation: disk ease-in-out 3000ms 250ms both;
+          animation: disk ease-in-out 3000ms 250ms both;
 }
 .loader__disk__title {
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -174,36 +173,38 @@ a {
     z-index: -1;
   }
 }
-@-webkit-keyframes charge-disk {
+@-webkit-keyframes disk {
   0% {
     opacity: 1;
-    scale: 0;
-    rotate: 0deg;
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
   }
   70% {
     opacity: 1;
-    scale: 1;
-    rotate: 360deg;
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
   100% {
     opacity: 0;
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
-@keyframes charge-disk {
+@keyframes disk {
   0% {
     opacity: 1;
-    scale: 0;
-    rotate: 0deg;
+    -webkit-transform: scale(0) rotate(0deg);
+            transform: scale(0) rotate(0deg);
   }
   70% {
     opacity: 1;
-    scale: 1;
-    rotate: 360deg;
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
   100% {
     opacity: 0;
-    rotate: 360deg;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .banner__place {

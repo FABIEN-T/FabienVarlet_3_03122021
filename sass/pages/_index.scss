@@ -12,7 +12,7 @@
     &__background {
         width: 100%;
         height: 100%;
-        background-color: $primary;
+        background-color: white;
         display: flex;
         justify-content: center;
         position: fixed;
@@ -22,7 +22,6 @@
         animation: charge ease-in-out 3000ms 250ms forwards;
     }
     &__disk {
-        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,7 +33,7 @@
         border: $tertiary solid 5px;
         border-radius: 50%;
         background-image: linear-gradient(30deg, $secondary, $primary);
-        animation: charge-disk ease-in-out 3000ms 250ms both;
+        animation: disk ease-in-out 3000ms 250ms both;
 
         &__title {
             font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -62,20 +61,24 @@
     }
 }
 
-@keyframes charge-disk {
+@keyframes disk {
     0% {
         opacity: 1;
-        scale: 0;
-        rotate: 0deg;
+        transform: scale(0) rotate(0deg);
+        // transform: ;
+        
     }
     70% {
         opacity: 1;
-        scale: 1;
-        rotate: 360deg;
+        
+        transform: scale(1) rotate(360deg);
+        // transform: rotate(360deg);
+        // scale: 1;
+        // rotate: 360deg;
     }
     100% {
         opacity: 0;
-        rotate: 360deg;        
+        transform: rotate(360deg);        
         // z-index: -1;
     }
 }
