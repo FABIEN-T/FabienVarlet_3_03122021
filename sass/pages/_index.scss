@@ -1,3 +1,29 @@
+.loader {
+    &__background {
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: -1;
+        align-items: center;
+        animation: charge 3000ms 250ms forwards;
+    }
+}
+
+@keyframes charge {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        // display: none;
+    }
+}
+
+
 
 .banner {
     &__place {
@@ -52,7 +78,7 @@
             transform: scale(1.10);
             background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
             box-shadow: -1px -1px 6px shader-grey(76%), 2px 2px 6px shader-grey(76%);
-         }        
+        }        
     }    
 }
 
@@ -85,7 +111,6 @@
             background-color: pastel($primary);
             .functioning__icon--color {color: $primary;}
             transform: scale(1.05);
-            
         }    
     }
     &__round{
@@ -124,7 +149,7 @@
     }
 }
 
-
+ 
 .menu {
     flex: 23%;
     max-width: 23%;
@@ -155,8 +180,8 @@
     &:nth-child(2) img {
         bottom: -98px;
     }
-    &__new{
-        z-index: 2;
+    &__new {
+        z-index: auto;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -202,9 +227,6 @@
     &__icon {
         font-size: 1.5rem; 
     }
-    
-    
-
     &__icon-solid {
         position: absolute;
         left: 0px;
@@ -220,7 +242,6 @@
         transform-origin: bottom;
         transition: transform ease-in-out 1000ms;
     }
-
     &__icon-contour {
         position: absolute;
         left: 0px;

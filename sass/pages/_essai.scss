@@ -1,0 +1,32 @@
+.loader {
+    &__background {
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 1;
+        align-items: center;
+        animation: charge 3000ms 250ms forwards;
+    }
+}
+
+@keyframes charge {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.principal {
+    margin: 0px auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    // background-color: aqua;
+}
