@@ -129,9 +129,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 15%;
-  width: 250px;
-  height: 250px;
+  top: 17%;
+  width: 270px;
+  height: 270px;
   position: fixed;
   z-index: 1;
   border: #99E2D0 solid 5px;
@@ -180,12 +180,10 @@ a {
     scale: 0;
     rotate: 0deg;
   }
-  50% {
-    rotate: 360deg;
-  }
-  80% {
+  70% {
     opacity: 1;
     scale: 1;
+    rotate: 360deg;
   }
   100% {
     opacity: 0;
@@ -198,12 +196,10 @@ a {
     scale: 0;
     rotate: 0deg;
   }
-  50% {
-    rotate: 360deg;
-  }
-  80% {
+  70% {
     opacity: 1;
     scale: 1;
+    rotate: 360deg;
   }
   100% {
     opacity: 0;
