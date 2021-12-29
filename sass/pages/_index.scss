@@ -19,7 +19,7 @@
         // @include calque ($zindex: 1);
         z-index: 1;
         align-items: center;
-        animation: back ease-in-out 3500ms 500ms forwards;
+        animation: back ease-in-out 3700ms 700ms forwards;
     }
     &__disk {
         display: flex;
@@ -34,7 +34,7 @@
         border-radius: 50%;
         background-image: linear-gradient(30deg, $secondary, $primary);
         // background-color: $secondary;
-        animation: disk ease-in-out 3500ms 500ms both;
+        animation: disk ease-in-out 3700ms 700ms both;
 
         &__title {
             font-family: Shrikhand, Arial, Helvetica, sans-serif;
