@@ -52,11 +52,11 @@
         top: 24px;
         &:hover {
             .menu__icon-solid--flyover {
-                transform: scale(1);
+                transform: scale(0.84);
             }
-            .menu__icon-contour--flyover {
-                transform: scale(1.02);
-            }
+            // .menu__icon-contour--flyover {
+            //     transform: scale(1.02);
+            // }
         } 
     }
 }
@@ -97,8 +97,6 @@
             }
         }
     }
-
-    
 
     &__container {
         display: flex;

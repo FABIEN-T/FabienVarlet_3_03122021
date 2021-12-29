@@ -19,7 +19,7 @@
         // @include calque ($zindex: 1);
         z-index: 1;
         align-items: center;
-        animation: back ease-in-out 3000ms 250ms forwards;
+        animation: back ease-in-out 3500ms 500ms forwards;
     }
     &__disk {
         display: flex;
@@ -30,12 +30,11 @@
         height: 270px;        
         position: fixed;
         z-index: 1;
-        // opacity: 1;
-        border: $tertiary solid 5px;
+        border: $tertiary solid 12px;
         border-radius: 50%;
-        // background-image: linear-gradient(30deg, $secondary, $primary);
-        background-color: $secondary;
-        animation: disk ease-in-out 3000ms 250ms both;
+        background-image: linear-gradient(30deg, $secondary, $primary);
+        // background-color: $secondary;
+        animation: disk ease-in-out 3500ms 500ms both;
 
         &__title {
             font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -148,7 +147,7 @@
         &:hover {
             transform: scale(1.10);
             background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
-            box-shadow: -1px -1px 6px $grey-place-shdw, 2px 2px 6px $grey-place-shdw;
+            box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
         }        
     }    
 }
@@ -279,11 +278,11 @@
         bottom: 30px;
         &:hover {
             .menu__icon-solid--flyover {
-                transform: scale(1);
+                transform: scale(0.84);
             }
-            .menu__icon-contour--flyover {
-                transform: scale(1.02);
-            }
+            // .menu__icon-contour--flyover {
+            //     transform: scale(1.02);
+            // }
             // .menu__icon-solid--flyover {
             //     width: 100%;
             //     height: 100%;
@@ -295,39 +294,38 @@
         }               
     }
 
-    &__icon {
-        font-size: 1.5rem; 
-    }
-    &__icon-solid {
+        &__icon-solid {
+        z-index: 1;
         position: absolute;
         left: 0px;
-        bottom: 1px;
+        bottom: 3px;
         font-size: 1.5rem;
         background-clip: text;
         color: transparent; 
         background-image: linear-gradient(30deg, $secondary, $primary);
-        // width: 0px;
-        // height: 0px;
-        // transition: all ease-in-out 1s;
         transform: scale(0);
         transform-origin: bottom;
         transition: transform ease-in-out 1000ms;
     }
-    &__icon-contour {
-        position: absolute;
-        left: 0px;
-        bottom: 1px;
-        font-size: 1.5rem;
-        background-clip: text;
-        color: transparent; 
-        background-image: linear-gradient(30deg, $secondary, $primary);
+    &__icon {
+        z-index: 2;
+        font-size: 1.5rem; 
+    }
+    // &__icon-contour {
+    //     position: absolute;
+    //     left: 0px;
+    //     bottom: 1px;
+    //     font-size: 1.5rem;
+    //     background-clip: text;
+    //     color: transparent; 
+    //     background-image: linear-gradient(30deg, $secondary, $primary);
         // width: 0px;
         // height: 0px;
         // transition: all ease-in-out 1s;
-        transform: scale(0);    
-        transform-origin: bottom;
-        transition: transform ease-in-out 1000ms;
-    }
+    //     transform: scale(0);    
+    //     transform-origin: bottom;
+    //     transition: transform ease-in-out 1000ms;
+    // }
 
     &:nth-child(n+3):nth-child(-n+4) .menu__new{
         display: none;
