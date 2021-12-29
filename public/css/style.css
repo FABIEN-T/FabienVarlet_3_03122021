@@ -115,8 +115,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: charge ease-in-out 3000ms 250ms forwards;
-          animation: charge ease-in-out 3000ms 250ms forwards;
+  -webkit-animation: back ease-in-out 3000ms 250ms forwards;
+          animation: back ease-in-out 3000ms 250ms forwards;
 }
 .loader__disk {
   display: -webkit-box;
@@ -141,18 +141,25 @@ a {
 }
 .loader__disk__title {
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   vertical-align: baseline;
   color: white;
   text-shadow: 2px 2px 2px #353535;
 }
 
-@-webkit-keyframes charge {
+@-webkit-keyframes back {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
   99% {
+    opacity: 0;
     z-index: 1;
   }
   100% {
@@ -161,11 +168,18 @@ a {
   }
 }
 
-@keyframes charge {
+@keyframes back {
   0% {
     opacity: 1;
   }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
   99% {
+    opacity: 0;
     z-index: 1;
   }
   100% {
@@ -179,15 +193,24 @@ a {
     -webkit-transform: scale(0) rotate(0deg);
             transform: scale(0) rotate(0deg);
   }
-  70% {
+  60% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(360deg);
             transform: scale(1) rotate(360deg);
+  }
+  87% {
+    opacity: 0;
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+  99% {
+    z-index: 1;
   }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    z-index: -1;
   }
 }
 @keyframes disk {
@@ -196,15 +219,24 @@ a {
     -webkit-transform: scale(0) rotate(0deg);
             transform: scale(0) rotate(0deg);
   }
-  70% {
+  60% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(360deg);
             transform: scale(1) rotate(360deg);
+  }
+  87% {
+    opacity: 0;
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+  99% {
+    z-index: 1;
   }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    z-index: -1;
   }
 }
 .banner__place {
