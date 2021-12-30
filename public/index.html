@@ -11,13 +11,13 @@
 
     <body>
         
-        <div class="loader">
+        <!-- <div class="loader">
             <div class="loader__background"></div>
             <div class="loader__disk">
                 <div class="loader__disk__title"> ohmyfood </div>
             </div>
 
-        </div>
+        </div> -->
 
         <header class="header">
             <h1 class="header__title">ohmyfood</h1>
@@ -26,19 +26,25 @@
         <main>
 
             <div class="banner">
-                <a href="#">
+                <!-- <a href="#"> --> 
                     <div class="banner__place">
                         <i class="fas fa-map-marker-alt banner__icon"></i>
-                        Paris, Belleville   
+                        <!-- Paris, Belleville   
                     </div>
-                </a> 
+                    <div>                   -->
+                        <form method="post" action="traitement.php">            
+                            <label for="search"></label> 
+                            <input type="search" name="search" id="search" size="15" placeholder="Paris, Belleville"/>
+                        </form>
+                    </div>
+                <!-- </a>  -->
             </div>
 
             <section class="presentation">    
                 <h2 class="presentation__title">Réservez le menu qui vous convient</h2>
                 <div>
-                    <p class="presentation__paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                    
+                    <a href="#">
+                        <p class="presentation__paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                         <div class="presentation__gradient">Explorez nos restaurants</div>                    
                     </a>
                 </div>

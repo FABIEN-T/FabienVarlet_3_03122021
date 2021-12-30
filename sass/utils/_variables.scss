@@ -1,7 +1,12 @@
+// ******************Breakpoints**********************
+
 $breakpoints: (
     mobile: 599px,
     tablette: 1200px
     );
+
+    
+// ******************Couleurs**********************
 
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -17,8 +22,15 @@ $grey-bkgd: #f6f6f6;
 $grey-icon: #808080;
 $footer: #353535;
 
+
+// ******************Animations Loader**********************
+
+$duration: 2500ms;
+$delay: 250ms;
+
+
 // ******************Apparitions menus**********************
 
 $choice-duration: 800ms;
-$delay: 400ms;
+$choice-delay: 400ms;
 $choice-number: 4;

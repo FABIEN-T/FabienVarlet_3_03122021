@@ -13,51 +13,54 @@
     &__restaurant {
         display: flex;
         flex-direction: column;
-        background-color: $grey-bkgd;
         border-radius: 50px 50px 0px 0px;
+        background-color: $grey-bkgd;
     }
     &__button {
         text-align: center;
-        margin: 30px auto 70px;
+        margin: 35px auto 70px;
     }
 
-    &__gradient {        
-        padding: 15px;        
-        width: 185px; 
-        color: $white;
-        border-radius: 30px; 
-        background: linear-gradient(170deg, $secondary, $primary);
-        box-shadow: 2px 2px 3px shader-grey(76%);
-        transform: scale(1);
-        transition: transform 400ms;
-        &:hover {
-            transform: scale(1.10);
-            background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
-            box-shadow: -1px -1px 6px shader-grey(76%), 2px 2px 6px shader-grey(76%);
-        }        
-    } 
+    // &__gradient {        
+    //     padding: 15px 50px;        
+    //     // width: 185px; 
+    //     color: $white;
+    //     border-radius: 30px; 
+    //     background: linear-gradient(170deg, $secondary, $primary);
+    //     box-shadow: 2px 2px 3px shader-grey(76%);
+    //     transform: scale(1);
+    //     transition: all 400ms;
+    //     &:hover {
+    //         transform: scale(1.01);
+    //         background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
+    //         box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
+    //         }        
+    //     } 
 }
 
 .name {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 20px 20px 0px 20px;
+    margin: 15px 20px 0px 20px;
     &__title {
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
+    }
+    &__title {
+        font-size: 1.65rem;
     }
     &__heart {
         position: absolute;
         right: 24px;
-        top: 24px;
-        &:hover {
-            .menu__icon-solid--flyover {
-                transform: scale(0.84);
-            }
-            // .menu__icon-contour--flyover {
-            //     transform: scale(1.02);
-            // }
-        } 
+        top: 26px;
+    //     &:hover {
+    //         .menu__icon-solid--flyover {
+    //             transform: scale(0.84);
+    //         }
+    //         // .menu__icon-contour--flyover {
+    //         //     transform: scale(1.02);
+    //         // }
+    //     } 
     }
 }
 
@@ -105,7 +108,7 @@
         border-radius: 20px;        
         overflow: hidden;
         box-shadow: 3px 3px 3px shader-grey(93%);
-        background-color: rgb(255, 255, 255);
+        background-color: $white;
         &:hover {
             & .choice__check--rollover {
                 margin-right: 0rem;
@@ -118,8 +121,7 @@
     &__text {
         display: flex;
         flex-direction: column;
-        padding: 15px 0px 15px 12px;
-        // flex-shrink: 1;
+        padding: 12px 0px 12px 12px;
         overflow: hidden;
     }
     &__title {
@@ -152,15 +154,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 4.5rem;
-        margin-right: -4.5rem;
+        width: 3.7rem;
+        margin-right: -3.7rem;
         background-color: $tertiary;
-        transition: margin-right 400ms ease-in-out;
+        transition: margin-right 500ms ease-in-out;
     }
     &__icon {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         transform: rotate(0deg);
-        transition: transform 400ms ease-in-out;
+        transition: transform 500ms ease-in-out;
     }
 }
