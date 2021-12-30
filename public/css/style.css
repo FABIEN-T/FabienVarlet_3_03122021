@@ -99,6 +99,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  z-index: 1;
+  -webkit-animation: loader ease-in-out 2500ms 250ms forwards;
+          animation: loader ease-in-out 2500ms 250ms forwards;
 }
 .loader__background {
   width: 100%;
@@ -111,12 +114,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
-  z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: back ease-in-out 3700ms 700ms forwards;
-          animation: back ease-in-out 3700ms 700ms forwards;
+  -webkit-animation: back ease-in-out 2500ms 250ms forwards;
+          animation: back ease-in-out 2500ms 250ms forwards;
 }
 .loader__disk {
   display: -webkit-box;
@@ -132,12 +134,11 @@ a {
   width: 270px;
   height: 270px;
   position: fixed;
-  z-index: 1;
   border: #99E2D0 solid 12px;
   border-radius: 50%;
   background-image: linear-gradient(30deg, #FF79DA, #9356DC);
-  -webkit-animation: disk ease-in-out 3700ms 700ms both;
-          animation: disk ease-in-out 3700ms 700ms both;
+  -webkit-animation: disk ease-in-out 2500ms 250ms both;
+          animation: disk ease-in-out 2500ms 250ms both;
 }
 .loader__disk__title {
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -148,6 +149,29 @@ a {
   text-shadow: 2px 2px 2px #353535;
 }
 
+@-webkit-keyframes loader {
+  0% {
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+
+@keyframes loader {
+  0% {
+    z-index: 1;
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+  }
+}
 @-webkit-keyframes back {
   0% {
     opacity: 1;
@@ -160,14 +184,11 @@ a {
   }
   99% {
     opacity: 0;
-    z-index: 1;
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
-
 @keyframes back {
   0% {
     opacity: 1;
@@ -180,11 +201,9 @@ a {
   }
   99% {
     opacity: 0;
-    z-index: 1;
   }
   100% {
     opacity: 0;
-    z-index: -1;
   }
 }
 @-webkit-keyframes disk {
@@ -203,14 +222,10 @@ a {
     -webkit-transform: scale(1) rotate(360deg);
             transform: scale(1) rotate(360deg);
   }
-  99% {
-    z-index: 1;
-  }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    z-index: -1;
   }
 }
 @keyframes disk {
@@ -229,14 +244,10 @@ a {
     -webkit-transform: scale(1) rotate(360deg);
             transform: scale(1) rotate(360deg);
   }
-  99% {
-    z-index: 1;
-  }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    z-index: -1;
   }
 }
 .banner__place {
@@ -309,8 +320,8 @@ a {
   transition: transform 400ms, -webkit-transform 400ms;
 }
 .presentation__gradient:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   background: linear-gradient(170deg, #ff8de0, #9e67e0);
   -webkit-box-shadow: -1px -1px 6px #808080, 2px 2px 3px #808080;
           box-shadow: -1px -1px 6px #808080, 2px 2px 3px #808080;
@@ -447,7 +458,6 @@ a {
   bottom: -98px;
 }
 .menu__new {
-  z-index: auto;
   position: absolute;
   top: 15px;
   right: 15px;
