@@ -1,13 +1,15 @@
-
 .page {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    // max-width: 600px;
     // margin: 0px auto;
     &__image {
         height: 200px;
         & img{
             max-width: 100%;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
         }
     }
     &__restaurant {
@@ -16,6 +18,21 @@
         border-radius: 50px 50px 0px 0px;
         background-color: $grey-bkgd;
     }
+
+    &__elements {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0px;
+        
+        @include tablette {
+            flex-wrap: wrap;
+        }
+        @include mobile-only {
+            flex-direction: column;
+        }
+    }
+
     &__button {
         text-align: center;
         margin: 35px auto 70px;
@@ -45,8 +62,6 @@
     margin: 15px 20px 0px 20px;
     &__title {
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
-    }
-    &__title {
         font-size: 1.65rem;
     }
     &__heart {
@@ -64,15 +79,29 @@
     }
 }
 
+
 .type {
-    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    max-width: 30%;
+    margin: 20px 0px 20px 20px;
+    @include tablette {
+        flex: 45%;
+        min-width: 45%;
+    }
+    
+    @include mobile-only {
+        flex: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
     &__title {
         font-size: 120%;
         font-weight: 300;
         border-bottom: $tertiary solid 3px;
         width: 48px;
     }
-    
 }
 
 @keyframes animation-choice {
@@ -144,7 +173,7 @@
         display: flex;
     }
     &__price {
-        padding: 0px 20px;
+        // padding: 0px 20px;
         display: flex;
         align-items: flex-end;
         padding: 1rem 1.5rem;

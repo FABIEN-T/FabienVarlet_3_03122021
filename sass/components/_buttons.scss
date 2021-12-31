@@ -1,0 +1,49 @@
+.presentation { 
+    &__gradient {        
+        padding: 15px;
+        // margin: 40px auto;
+        width: 185px; 
+        color: $white;
+        border-radius: 30px; 
+        background: linear-gradient(170deg, $secondary, $primary);
+        box-shadow: 2px 2px 3px $grey-place-shdw;
+        transform: scale(1);
+        transition: all 400ms;
+        &:hover {
+            transform: scale(1.01);
+            background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
+            box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
+        }        
+    }    
+}
+
+
+.menu {
+    &__heart {
+        // position: absolute;
+        // right: 25px;
+        // bottom: 30px;
+        &:hover {
+            .menu__icon-solid--flyover {
+                transform: scale(0.84);
+            }
+        }               
+    }
+    &__icon-solid {
+        z-index: 1;
+        position: absolute;
+        left: 0px;
+        bottom: 3px;
+        font-size: 1.5rem;
+        background-clip: text;
+        color: transparent; 
+        background-image: linear-gradient(30deg, $secondary, $primary);
+        transform: scale(0);
+        transform-origin: bottom;
+        transition: transform ease-in-out 700ms;
+    }
+    &__icon {
+        z-index: 2;
+        font-size: 1.5rem; 
+    }
+}
