@@ -157,7 +157,7 @@ input::placeholder {
         &:hover {
             background-color: pastel($primary);
             .functioning__icon--color {color: $primary;}
-            // transform: scale(1.03);
+            transform: scale(1.02);
             box-shadow: -3px -3px 6px $grey-place-bkgd, 4px 4px 6px $grey-place-bkgd;
         }    
     }

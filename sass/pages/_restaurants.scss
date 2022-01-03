@@ -1,29 +1,55 @@
 .page {
     display: flex;
     flex-direction: column;
-    // max-width: 600px;
-    // margin: 0px auto;
     &__image {
-        height: 200px;
+        box-sizing: border-box;
+        z-index: -1;
+        margin-bottom: -50px;
+        // width: 100%;
+        overflow: hidden;
+        height: 250px;
+        // width: 600px;
+        object-fit: cover;
+        // height: 100%;
+        // max-width: 100%;
+        // @include mobile-only {
+            
+        // }
         & img{
-            max-width: 100%;
-            // top: 50%;
+            max-width: 105%;
+            // height: 100%;
+            // top: 40%;
             // left: 50%;
-            // transform: translate(-50%, -50%);
+            transform: translateY(-40%);
+            @include mobile-only {
+                transform: translateY(0%);
+                object-fit: cover;
+                width: auto;
+                
+            }
+            @media screen and (max-width: 352px) {
+                height: 100%;
+                // transform: translate(0%, 0%);
+            }
         }
     }
     &__restaurant {
+        position: relative;
         display: flex;
         flex-direction: column;
+        z-index: 3;
         border-radius: 50px 50px 0px 0px;
-        background-color: $grey-bkgd;
+        // background-color: $grey-bkgd;
+        background-color: darkgrey;
     }
 
     &__elements {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        justify-content: space-between;        
+        // max-width: 100vw;
         margin: 0px;
+        padding: 0px 20px;
         
         @include tablette {
             flex-wrap: wrap;
@@ -35,7 +61,7 @@
 
     &__button {
         text-align: center;
-        margin: 35px auto 70px;
+        margin: -10px auto 20px;
     }
 
     // &__gradient {        
@@ -83,18 +109,18 @@
 .type {
     display: flex;
     flex-direction: column;
-    flex: 30%;
-    max-width: 30%;
-    margin: 20px 0px 20px 20px;
+    flex: 32%;
+    max-width: 32%;
+    box-sizing: border-box;
+    margin: 10px 0px 0px 0px;
     @include tablette {
-        flex: 45%;
-        min-width: 45%;
+        flex: 49%;
+        max-width: 49%;
     }
-    
     @include mobile-only {
         flex: 100%;
         max-width: 100%;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
     }
     &__title {
         font-size: 120%;
@@ -102,7 +128,12 @@
         border-bottom: $tertiary solid 3px;
         width: 48px;
     }
+    // &:nth-child(3){
+    //     align-self: center;
+    // }
 }
+
+
 
 @keyframes animation-choice {
     0% {
@@ -176,7 +207,7 @@
         // padding: 0px 20px;
         display: flex;
         align-items: flex-end;
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.3rem 0.8rem;
     }
     &__check {
         box-sizing: border-box;
