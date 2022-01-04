@@ -16,8 +16,6 @@
         }        
     }    
 
-
-
 .heart {
     position: relative;
     height: fit-content;
@@ -45,31 +43,3 @@
         font-size: 1.5rem; 
     }
 }
-
-
-// .menu {
-//     &__heart {
-//         &:hover {
-//             .menu__icon-solid--flyover {
-//                 transform: scale(0.84);
-//             }
-//         }               
-//     }
-//     &__icon-solid {
-//         z-index: 1;
-//         position: absolute;
-//         left: 0px;
-//         bottom: 3px;
-//         font-size: 1.5rem;
-//         background-clip: text;
-//         color: transparent; 
-//         background-image: linear-gradient(30deg, $secondary, $primary);
-//         transform: scale(0);
-//         transform-origin: bottom;
-//         transition: transform ease-in-out 700ms;
-//     }
-//     &__icon {
-//         z-index: 2;
-//         font-size: 1.5rem; 
-//     }
-// }

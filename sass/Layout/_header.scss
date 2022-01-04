@@ -1,10 +1,5 @@
 .header {
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // position: relative;
     background-color: $white;
-    // height: 2rem
     &__icon {
         font-size: clamp(0.5rem, 11vw, 1.2rem);
         position: absolute;

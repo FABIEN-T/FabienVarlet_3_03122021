@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="./css/style.css"/>
-
         <title>ohmyfood</title>
     </head>
 
@@ -13,16 +11,13 @@
         
         <div class="loader">
             <div class="loader__background"></div>
-            <div class="loader__disk">
-                <div class="loader__title"> ohmyfood </div>
-                
+                <div class="loader__disk">
+                    <div class="loader__title"> ohmyfood </div>
+                </div>
+                <div class="loader__disk2">
+                    <i class="fas fa-utensils loader__icon"></i>
+                </div>
             </div>
-            <div class="loader__disk2">
-                <div><i class="fas fa-utensils loader__icon"></i></div>
-                
-            </div>
-            
-        </div>
 
         <header class="header">
             <h1 class="header__title">ohmyfood</h1>
@@ -30,19 +25,14 @@
 
         <main>
 
-            <div class="banner">
-                <!-- <a href="#"> --> 
-                    <div class="banner__place">
-                        <i class="fas fa-map-marker-alt banner__icon"></i>
-                        <!-- Paris, Belleville   
-                    </div>
-                    <div>                   -->
-                        <form method="post" action="traitement.php">            
-                            <label for="search"></label> 
-                            <input type="search" name="search" id="search" size="15" placeholder="Paris, Belleville"/>
-                        </form>
-                    </div>
-                <!-- </a>  -->
+            <div class="banner"> 
+                <div class="banner__place">
+                    <i class="fas fa-map-marker-alt banner__icon"></i>
+                    <form method="post" action="traitement.php">            
+                        <label for="search"></label> 
+                        <input type="search" name="search" id="search" size="15" placeholder="Paris, Belleville"/>
+                    </form>
+                </div>
             </div>
 
             <section class="presentation">    
@@ -53,48 +43,31 @@
                         <div class="gradient">Explorez nos restaurants</div>                    
                     </a>
                 </div>
-                
             </section>
 
             <section class="functioning">
                 <h2 class="functioning__title">Fonctionnement</h2>
 
                 <div class="functioning__threebuttons">
-                    <!-- <div class="functioning__ess"> -->
-                        
-                            <div class="functioning__button">
-                                <!-- <a href="#"> -->
-                                    <div class="functioning__round">1</div>
-                                    <i class="fas fa-mobile-alt functioning__icon functioning__icon--color"></i>
-                                    <p class="functionning__paragraph">Choisissez un restaurant</p>
-                                <!-- </a>     -->
-                            </div>
+
+                     <div class="functioning__button">
+                        <div class="functioning__round">1</div>
+                        <i class="fas fa-mobile-alt functioning__icon functioning__icon--color"></i>
+                        <p class="functionning__paragraph">Choisissez un restaurant</p>                
+                    </div>
                                        
-                    <!-- </div> -->
-
-                    <!-- <div class="functioning__ess"> -->
+                    <div class="functioning__button">
+                        <div class="functioning__round">2</div>
+                        <i class="fas fa-list-ul functioning__icon functioning__icon--color"></i>
+                        <p class="functionning__paragraph">Composez votre menu</p>           
+                    </div>  
                         
-                            <div class="functioning__button">
-                                <!-- <a href="#"> -->
-                                    <div class="functioning__round">2</div>
-                                    <i class="fas fa-list-ul functioning__icon functioning__icon--color"></i>
-                                    <p class="functionning__paragraph">Composez votre menu</p>
-                                <!-- </a>     -->
-                            </div>  
-                                     
-                    <!-- </div> -->
+                    <div class="functioning__button">
+                        <div class="functioning__round">3</div>
+                        <i class="fas fa-store functioning__icon functioning__icon--color"></i>
+                        <p class="functionning__paragraph">Dégustez au restaurant</p>
+                    </div> 
 
-                    <!-- <div class="functioning__ess"> -->
-                        
-                            <div class="functioning__button">
-                                <!-- <a href="#"> -->
-                                    <div class="functioning__round">3</div>
-                                    <i class="fas fa-store functioning__icon functioning__icon--color"></i>
-                                    <p class="functionning__paragraph">Dégustez au restaurant</p>
-                                <!-- </a> -->
-                            </div> 
-                                      
-                    <!-- </div> -->
                 </div>    
 
             </section>
@@ -113,27 +86,10 @@
                                     <p class="menu__paragraph">Menilmontant</p>
                                 </div>
                                 <div class="heart">
-                                        <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                        <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
+                                    <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
+                                    <i class="far fa-heart heart__icon"></i> 
                                 </div>
                             </div> 
-                            <!-- <div class="menu__text">
-                                <h3 class="menu__title">La palette du goût</h3>
-                                <p class="menu__paragraph">Ménilmontant</p>
-                            </div>
-                        </a>
-                        <div class="heart">
-                            <a href="#">
-                                <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
-                            </a>
-                        </div>     -->
-                        <!-- <div class="menu__heart">
-                            <a href="#">
-                                <i class="fas fa-heart menu__icon-solid menu__icon-solid--flyover"></i> 
-                                <i class="far fa-heart menu__icon menu__icon--flyover "></i> 
-                            
-                        </div>                         -->
                         </a>
                     </div>
                                         
@@ -147,18 +103,10 @@
                                     <p class="menu__paragraph">Charonne</p>
                                 </div>
                                 <div class="heart">
-                                        <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                        <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
+                                    <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
+                                    <i class="far fa-heart heart__icon"></i> 
                                 </div>
-                            </div>    
-                         
-                                        
-                        <!-- <div class="menu__heart">
-                            <a href="#">
-                                <i class="fas fa-heart menu__icon-solid menu__icon-solid--flyover"></i>                                
-                                <i class="far fa-heart menu__icon menu__icon--flyover "></i>
-                            </a>
-                        </div>                         -->
+                            </div>  
                         </a>
                     </div>
 
@@ -172,28 +120,10 @@
                                     <p class="menu__paragraph">Cité Rouge</p>
                                 </div>
                                 <div class="heart">
-                                        <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                        <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
+                                    <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
+                                    <i class="far fa-heart heart__icon"></i> 
                                  </div>
                             </div>
-                            <!-- <div class="menu__text">
-                                <h3 class="menu__title"></h3>
-                                <p class="menu__paragraph"></p>
-                            </div>
-                        </a>
-                        <div class="heart">
-                            <a href="#">
-                                <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
-                            </a>
-                        </div> -->
-                        <!-- <div class="menu__heart">
-                            <a href="#">
-                                <i class="fas fa-heart menu__icon-solid menu__icon-solid--flyover"></i>
-                                <i class="far fa-heart menu__icon menu__icon--flyover "></i>
-                                
-                            </a>
-                        </div> -->
                         </a>
                     </div>
 
@@ -207,39 +137,15 @@
                                     <p class="menu__paragraph">Folie-Méricourt</p>
                                 </div>
                                 <div class="heart">
-                                        <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                        <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
+                                    <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
+                                    <i class="far fa-heart heart__icon"></i> 
                                 </div>
                             </div>
-                            <!-- <div class="menu__text">
-                                <h3 class="menu__title">Le délice des sens</h3>
-                                <p class="menu__paragraph">Folie-Méricourt</p>
-                            </div>
-                        </a>
-                        <div class="heart">
-                            <a href="#">
-                                <i class="fas fa-heart heart__icon-solid heart__icon-solid--flyover"></i> 
-                                <i class="far fa-heart heart__icon heart__icon--flyover "></i> 
-                            </a>
-                        </div> -->
-                        <!-- <div class="menu__heart">
-                            <a href="#">
-                                <i class="fas fa-heart menu__icon-solid menu__icon-solid--flyover"></i>                                
-                                <i class="far fa-heart menu__icon menu__icon--flyover "></i>
-                            </a>
-                        </div> -->
                         </a>
                     </div>
-
                     
                 </div>
-            </section>
-
-            
-            
-
-                
-      
+            </section>      
         </main>
 
         <footer class="footer">

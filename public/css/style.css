@@ -12,11 +12,6 @@ body {
 main {
   margin: 0px auto;
 }
-@media (max-width: 599px) {
-  main {
-    max-width: 100%;
-  }
-}
 
 a {
   color: black;
@@ -110,8 +105,8 @@ a {
           justify-content: center;
   position: relative;
   z-index: 1;
-  -webkit-animation: loader ease-in-out 3000ms 80ms forwards;
-          animation: loader ease-in-out 3000ms 80ms forwards;
+  -webkit-animation: loader ease-in-out 3000ms 300ms forwards;
+          animation: loader ease-in-out 3000ms 300ms forwards;
 }
 .loader__background {
   width: 100%;
@@ -127,8 +122,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: back ease-in-out 3000ms 80ms forwards;
-          animation: back ease-in-out 3000ms 80ms forwards;
+  -webkit-animation: back ease-in-out 3000ms 300ms forwards;
+          animation: back ease-in-out 3000ms 300ms forwards;
 }
 .loader__disk {
   top: 17vh;
@@ -138,8 +133,8 @@ a {
   border: #99E2D0 solid 12px;
   border-radius: 50%;
   background-image: linear-gradient(30deg, #FF79DA, #9356DC);
-  -webkit-animation: disk ease-in-out 3000ms 80ms both;
-          animation: disk ease-in-out 3000ms 80ms both;
+  -webkit-animation: disk ease-in-out 3000ms 300ms both;
+          animation: disk ease-in-out 3000ms 300ms both;
 }
 .loader__disk2 {
   top: 17vh;
@@ -149,8 +144,8 @@ a {
   opacity: 1;
   border: #99E2D0 solid 12px;
   border-radius: 50%;
-  -webkit-animation: disk2 ease-in-out 3000ms 80ms both;
-          animation: disk2 ease-in-out 3000ms 80ms both;
+  -webkit-animation: disk2 ease-in-out 3000ms 300ms both;
+          animation: disk2 ease-in-out 3000ms 300ms both;
 }
 .loader__title {
   margin-top: 110px;
@@ -169,8 +164,8 @@ a {
   border-radius: 20px;
   padding: 0.8rem;
   font-size: 4rem;
-  -webkit-animation: iconshake ease-in-out 3000ms 80ms both;
-          animation: iconshake ease-in-out 3000ms 80ms both;
+  -webkit-animation: iconshake ease-in-out 3000ms 300ms both;
+          animation: iconshake ease-in-out 3000ms 300ms both;
 }
 
 @-webkit-keyframes loader {
@@ -962,20 +957,20 @@ input::placeholder {
           animation: animation-choice ease-in-out 800ms backwards;
 }
 .choice__load--1 {
-  -webkit-animation-delay: 80ms;
-          animation-delay: 80ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 .choice__load--2 {
-  -webkit-animation-delay: 160ms;
-          animation-delay: 160ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .choice__load--3 {
-  -webkit-animation-delay: 240ms;
-          animation-delay: 240ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 .choice__load--4 {
-  -webkit-animation-delay: 320ms;
-          animation-delay: 320ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 .choice__container {
   display: -webkit-box;

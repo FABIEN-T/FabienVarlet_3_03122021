@@ -115,7 +115,6 @@ input::placeholder {
 .functioning {
     margin: 50px 0px 70px;
     padding: 0px 24px;
-    
     &__threebuttons {
         display: flex;
         justify-content: space-between;
@@ -124,19 +123,11 @@ input::placeholder {
             flex-direction: column;
         }
     }
-    // &__ess {
-    //     display: flex;
-    //     // flex-grow: 1;
-    //     // min-width: 50%;
-    //     // max-width: 50%;
-    // }
-
     &__button {
         cursor: pointer;
         display: flex;
         flex: 30%;
         max-width: 30%;
-        // width: 280px;
         align-items: center;
         margin: 0px auto 30px;
         padding: 10px 0px;
@@ -147,7 +138,6 @@ input::placeholder {
             padding: 10px 0px 10px 0px;
         }
         @include mobile-only {
-            // flex: 100%;
             width: 100%;
             max-width: 100%;
             padding: 10px 0px 10px 0px;
@@ -189,11 +179,6 @@ input::placeholder {
         width: 40px;
         color: $grey-icon;
     }
-    // &__paragraph {
-    //     // font-size: 1.8rem;
-    //     // font-weight: bolder;
-    //     margin: 0px;
-    // }
 }
 
 .list-menus {
@@ -212,7 +197,6 @@ input::placeholder {
         justify-content: space-between;  
     }
 }
-
  
 .menu {
     flex: 24%;
@@ -236,7 +220,6 @@ input::placeholder {
     }
     &__image {
         position: relative;
-        // width: 100%;
         height: 170px;
         overflow: hidden;
         img {    
@@ -246,16 +229,9 @@ input::placeholder {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
-            // width: 100%;
-            // object-fit: cover;
         }
     }
-    // &:nth-child(2) img {
-    //     bottom: -30px;
-    // }
     &__new {
-        // z-index: auto;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -270,12 +246,7 @@ input::placeholder {
         justify-content: space-between;
         padding: 16px 30px 16px 10px;
         background-color: $white;
-        // flex-wrap: nowrap;
-        
     }
-    // &__text { 
-    //     flex-grow: 1;        
-    // }
     &__title {
         margin: 0px auto; 
         font-weight: bolder;       
@@ -285,36 +256,9 @@ input::placeholder {
         margin: 2px auto 0px;
     }     
     
-    //     &:hover {
-    //         .menu__icon-solid--flyover {
-    //             transform: scale(0.84);
-    //         }
-    //     }               
-    // }
-    // &__icon-solid {
-        // z-index: 1;
-        // position: absolute;
-        // left: 0px;
-        // bottom: 3px;
-        // font-size: 1.5rem;
-        // background-clip: text;
-        // color: transparent; 
-        // background-image: linear-gradient(30deg, $secondary, $primary);
-        // transform: scale(0);
-        // transform-origin: bottom;
-        // transition: transform ease-in-out 700ms;
-    // }
-    // &__icon {
-    //     z-index: 2;
-    //     font-size: 1.5rem; 
-    // }
-
     &:nth-child(n+3):nth-child(-n+4) .menu__new{
         display: none;
     }
 }
 
 
-// .heart {
-//     height: fit-content;
-// }

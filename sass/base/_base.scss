@@ -13,12 +13,7 @@ body {
 }
 
 main {
-    @media (max-width: 599px) {
-        max-width: 100%;
-    }
     margin: 0px auto;
-    // border: lawngreen solid 1px;
-}
 
 a {
     color: $black;
@@ -27,5 +22,4 @@ a {
 
 * {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    // font-weight: 500;
 }

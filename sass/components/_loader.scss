@@ -33,7 +33,6 @@
         opacity: 1;
         border: $tertiary solid 12px;
         border-radius: 50%;
-        // border-color: yellow;
         animation: disk2 ease-in-out $duration $delay both;
     }
     &__title {
@@ -43,22 +42,17 @@
         text-align: center;
         color: $white;
         text-shadow: 2px 2px 2px $footer;
-        // animation: title ease-in-out $duration $delay both;
     }  
 
     &__icon {
         position: absolute;
         left: -20px;
         color: $white;
-        // text-shadow: 0px -1px 2px $grey-icon, 2px 2px 2px $grey-icon;
         border: solid $tertiary 5px;
         background-image: linear-gradient(30deg, $secondary, $primary);
-        // background-color: $secondary;
         border-radius: 20px;
         padding: 0.8rem;
         font-size: 4rem;
-        // transform: rotate(-180deg);
-        // animation: icon ease-in-out $duration $delay both;
         animation:  iconshake ease-in-out $duration $delay both;
     }  
     
@@ -108,13 +102,9 @@
         opacity: 0;
         transform: scale(1) rotate(360deg);
     }
-    // 99% {
-    //     // z-index: 1;
-    // }
     100% {
         opacity: 0;
-        transform: rotate(360deg);        
-        // z-index: -1;
+        transform: rotate(360deg);   
     }
 }
 
@@ -131,13 +121,9 @@
         opacity: 0;
         transform: scale(1) rotate(-1.5turn);
     }
-    // 99% {
-    //     // z-index: 1;
-    // }
     100% {
         opacity: 0;
-        transform: rotate(-1.6turn);        
-        // z-index: -1;
+        transform: rotate(-1.6turn);  
     }
 }
 
@@ -146,9 +132,6 @@
     0% {
         transform: scale(0) rotate(0deg);
     }
-    // 40% {
-    //     transform: scale(1);
-    // }
     50% {
         transform: scale(1) rotate(-180+$shake);
     }
@@ -175,52 +158,3 @@
     }
 }
 
-// @keyframes icon {
-//     0% {
-//         opacity: 0;
-//         transform: scale(0) rotate(0deg);
-//     }
-//     60% {
-//         opacity: 1;
-//         transform: scale(1) rotate(-360deg);
-//     }
-//     87% {
-//         opacity: 0;
-//         transform: scale(1) rotate(-360deg);
-//     }
-//     // 99% {
-//     //     // z-index: 1;
-//     // }
-//     100% {
-//         opacity: 0;
-//         transform: rotate(-360deg);        
-//         // z-index: -1;
-//     }
-// }
-
-// @keyframes title {
-//     0% {
-//         opacity: 0;
-//         transform: scale(0) rotate(0deg);
-//     }
-//     10% {
-//         opacity: 0;
-//         transform: scale(0) rotate(0deg);
-//     }
-//     60% {
-//         opacity: 1;
-//         transform: scale(1) rotate(360deg);
-//     }
-//     87% {
-//         opacity: 0;
-//         transform: scale(1) rotate(360deg);
-//     }
-//     99% {
-//         // z-index: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//         transform: rotate(360deg);        
-//         // z-index: -1;
-//     }
-// }

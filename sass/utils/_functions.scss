@@ -14,7 +14,4 @@
     @return $dark;
 }
 
-@function shader-grey ($gry){
-    $shader-grey: adjust-color(black, $hue:0, $saturation:0, $lightness: $gry);
-    @return $shader-grey;
-}
+
