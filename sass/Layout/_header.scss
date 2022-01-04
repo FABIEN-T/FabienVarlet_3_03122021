@@ -1,23 +1,22 @@
 .header {
-    // box-sizing: border-box;    
-    position: relative;
-    // background-color: $white;
-    background-color: darkkhaki;
-    // margin: 0px 0px;
-    // border: green solid 1px;
-
+    // display: flex;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // position: relative;
+    background-color: $white;
+    // height: 2rem
     &__icon {
-        font-size: 120%;
+        font-size: clamp(0.5rem, 11vw, 1.2rem);
         position: absolute;
         left: 20px;
         top: 20px;
     }
     &__title {
         margin: 0px;
-        padding: 0.6rem;
+        padding: 0.4rem;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
+        font-size: clamp(0.5rem, 11vw, 2rem);
         text-align: center;
-        // border: rgb(23, 9, 148) solid 1px;
     }
 }
 

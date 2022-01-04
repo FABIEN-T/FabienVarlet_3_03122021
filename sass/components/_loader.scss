@@ -11,8 +11,6 @@
         display: flex;
         justify-content: center;
         position: fixed;
-        // @include calque ($zindex: 1);
-        // z-index: 1;
         align-items: center;
         animation: back ease-in-out $duration $delay forwards;
     }
@@ -24,11 +22,9 @@
         width: 270px;
         height: 270px;        
         position: fixed;
-        // z-index: 1;
         border: $tertiary solid 12px;
         border-radius: 50%;
         background-image: linear-gradient(30deg, $secondary, $primary);
-        // background-color: $secondary;
         animation: disk ease-in-out $duration $delay both;
 
         &__title {

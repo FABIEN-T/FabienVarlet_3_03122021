@@ -90,9 +90,9 @@ input::placeholder {
         }
         // line-height: 5px;
     }
-    &__gradient {        
-        // padding: 15px;
-        margin: 40px auto;
+    // &__gradient {        
+    //     padding: 15px;
+    //     margin: 40px auto;
     //     width: 185px; 
     //     color: $white;
     //     border-radius: 30px; 
@@ -105,7 +105,11 @@ input::placeholder {
     //         background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
     //         box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
     //     }        
-    }    
+    // }    
+}
+
+.gradient {
+    margin: 40px auto;
 }
 
 .functioning {
@@ -261,10 +265,17 @@ input::placeholder {
         background-color: $tertiary;
         color: dark($tertiary);
     } 
-    &__text {            
-        padding: 16px 0px 16px 10px;
-        background-color: $white;        
+    &__textheart {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 30px 16px 10px;
+        background-color: $white;
+        // flex-wrap: nowrap;
+        
     }
+    // &__text { 
+    //     flex-grow: 1;        
+    // }
     &__title {
         margin: 0px auto; 
         font-weight: bolder;       
@@ -273,10 +284,7 @@ input::placeholder {
         font-weight: 400;
         margin: 2px auto 0px;
     }     
-    &__heart {
-        position: absolute;
-        right: 25px;
-        bottom: 30px;
+    
     //     &:hover {
     //         .menu__icon-solid--flyover {
     //             transform: scale(0.84);
@@ -284,24 +292,29 @@ input::placeholder {
     //     }               
     // }
     // &__icon-solid {
-    //     z-index: 1;
-    //     position: absolute;
-    //     left: 0px;
-    //     bottom: 3px;
-    //     font-size: 1.5rem;
-    //     background-clip: text;
-    //     color: transparent; 
-    //     background-image: linear-gradient(30deg, $secondary, $primary);
-    //     transform: scale(0);
-    //     transform-origin: bottom;
-    //     transition: transform ease-in-out 700ms;
+        // z-index: 1;
+        // position: absolute;
+        // left: 0px;
+        // bottom: 3px;
+        // font-size: 1.5rem;
+        // background-clip: text;
+        // color: transparent; 
+        // background-image: linear-gradient(30deg, $secondary, $primary);
+        // transform: scale(0);
+        // transform-origin: bottom;
+        // transition: transform ease-in-out 700ms;
     // }
     // &__icon {
     //     z-index: 2;
     //     font-size: 1.5rem; 
-    }
+    // }
 
     &:nth-child(n+3):nth-child(-n+4) .menu__new{
         display: none;
     }
 }
+
+
+// .heart {
+//     height: fit-content;
+// }

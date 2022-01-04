@@ -5,21 +5,14 @@
         box-sizing: border-box;
         z-index: -1;
         margin-bottom: -50px;
-        // width: 100%;
         overflow: hidden;
         height: 250px;
-        // width: 600px;
-        object-fit: cover;
-        // height: 100%;
-        // max-width: 100%;
         // @include mobile-only {
             
         // }
         & img{
             max-width: 105%;
             // height: 100%;
-            // top: 40%;
-            // left: 50%;
             transform: translateY(-40%);
             @include mobile-only {
                 transform: translateY(0%);
@@ -28,7 +21,9 @@
                 
             }
             @media screen and (max-width: 352px) {
-                height: 100%;
+                height: 250px;
+                width: 100%;
+                // object-fit: cover;
                 // transform: translate(0%, 0%);
             }
         }
@@ -37,10 +32,11 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        padding-top: 30px;
         z-index: 3;
         border-radius: 50px 50px 0px 0px;
-        // background-color: $grey-bkgd;
-        background-color: darkgrey;
+        background-color: $grey-bkgd;
+        // background-color: darkgrey;
     }
 
     &__elements {
@@ -84,27 +80,25 @@
 .name {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin: 15px 20px 0px 20px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 48px 0px 20px;
     &__title {
+        flex-grow: 0;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
-        font-size: 1.65rem;
-    }
-    &__heart {
-        position: absolute;
-        right: 24px;
-        top: 26px;
-    //     &:hover {
-    //         .menu__icon-solid--flyover {
-    //             transform: scale(0.84);
-    //         }
-    //         // .menu__icon-contour--flyover {
-    //         //     transform: scale(1.02);
-    //         // }
-    //     } 
-    }
+        // font-size: 1.65rem;
+        font-size: clamp(1rem, 7vw, 1.65rem);
+        margin: 0px;
+        // white-space: normal;
+    }  
 }
-
+// .heart2 {
+//     &__icon-solid {
+//         position: absolute;
+//         right: 40px;
+//         top: 50px;
+//     }
+// }
 
 .type {
     display: flex;
@@ -207,7 +201,9 @@
         // padding: 0px 20px;
         display: flex;
         align-items: flex-end;
-        padding: 1rem 1.3rem 0.8rem;
+        padding: 0.8rem 1.3rem;
+        font-weight: bold;
+
     }
     &__check {
         box-sizing: border-box;
