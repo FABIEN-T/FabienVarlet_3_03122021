@@ -1,4 +1,9 @@
+// ***********************************************************************************************
+//                                             LOADER
+// ***********************************************************************************************
+
 .loader {
+    // Fond blanc et organisation de la div
     display: flex;
     justify-content: center;
     position: relative;
@@ -14,7 +19,9 @@
         align-items: center;
         animation: back ease-in-out $duration $delay forwards;
     }
-    
+
+    // Spinner : Disque avec dégradé et titre "ohmyfood"
+    // tournant dans le sens horaire
     &__disk {
         top: 17vh;
         width: 270px;
@@ -25,16 +32,8 @@
         background-image: linear-gradient(30deg, $secondary, $primary);
         animation: disk ease-in-out $duration $delay both;
     }
-    &__disk2 {
-        top: 17vh;
-        width: 270px;
-        height: 270px;        
-        position: fixed;
-        opacity: 1;
-        border: $tertiary solid 12px;
-        border-radius: 50%;
-        animation: disk2 ease-in-out $duration $delay both;
-    }
+    
+    // titre "ohmyfood"
     &__title {
         margin-top: 110px;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -44,6 +43,22 @@
         text-shadow: 2px 2px 2px $footer;
     }  
 
+    // Disque invisible porteur de l'icône couverts (fas fa-utensils)
+    // tournant dans le sens anti-horaire
+    &__disktwo {
+        top: 17vh;
+        width: 270px;
+        height: 270px;        
+        position: fixed;
+        opacity: 1;
+        border: $tertiary solid 12px;
+        border-radius: 50%;
+        animation: disktwo ease-in-out $duration $delay both;
+    }
+
+    // icône couverts (fas fa-utensils)
+    // grandissant, tournant sur lui même et autour du disque invisible (disktwo)
+    // shake en fin d'animation 
     &__icon {
         position: absolute;
         left: -20px;
@@ -58,12 +73,14 @@
     
 }
 
+// Changement de l'ordre des calques
+// au début de l'animation les calques sont devant les éléments de la page index.html
+// à la fin de l'animation les calques sont derrière les éléments de la page index.html
 @keyframes loader {
     0% {
         z-index: 1;
     }     
     99% {
-        
         z-index: 1;
     }
     100% {
@@ -71,6 +88,8 @@
     }
 }
 
+// Animation du fond blanc :
+// disparaît à 99% après la disparition du spinner (__disk, __title, __icon)
 @keyframes back {
     0% {
         opacity: 1;
@@ -89,6 +108,10 @@
     }
 }
 
+ 
+// Animation du Spinner : Disque avec dégradé et titre "ohmyfood"
+// tournant dans le sens horaire
+// disparaît à 80% avant la disparition du fond blanc
 @keyframes disk {
     0% {
         opacity: 1;
@@ -108,7 +131,10 @@
     }
 }
 
-@keyframes disk2 {
+// Animation du Disque invisible porteur de l'icône couverts (fas fa-utensils)
+// tournant dans le sens anti-horairedu fond blanc :
+// disparaît à 80% avant la disparition du fond blanc
+@keyframes disktwo {
     0% {
         opacity: 1;
         transform: scale(0) rotate(-0.5turn);

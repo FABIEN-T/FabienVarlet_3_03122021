@@ -18,8 +18,6 @@
 }
 
 #search{
-    // z-index: 1;
-    // position: absolute;
     color: $footer;  
     background-color: $grey-place-bkgd;
     border: solid $grey-place-bkgd 0px;
@@ -30,21 +28,14 @@
 
 input:focus{
     outline: none;
-    // border: solid $grey-place-bkgd 0px;
     border-radius: 20px;
     background-color: $grey-bkgd;
 }
 input::placeholder {
     outline: none;
-    // border: solid $grey-place-bkgd 0px;
     border-radius: 20px;
     background-color: $grey-place-bkgd;
 }
-// input[type=search] {
-//     -moz-appearance: textfield;
-//     -webkit-appearance: textfield;
-//     appearance: textfield;
-// }
 
 ::-webkit-input-placeholder{     /* WebKit, Blink, Edge */
     color: $footer;
@@ -74,13 +65,9 @@ input::placeholder {
     margin-bottom: 0px;
     background-color: $grey-bkgd;
     &__title { 
-        // font-weight: 500;
         @include mobile-only {
             padding: 0px 70px;
         }
-        // @media (max-width: 599px) {
-        //     padding: 0px 70px;
-        // }
     }
     &__paragraph {  
         margin: -6px auto -4px;      
@@ -88,24 +75,7 @@ input::placeholder {
         @include mobile-only {
             padding: 0px 20px;
         }
-        // line-height: 5px;
     }
-    // &__gradient {        
-    //     padding: 15px;
-    //     margin: 40px auto;
-    //     width: 185px; 
-    //     color: $white;
-    //     border-radius: 30px; 
-    //     background: linear-gradient(170deg, $secondary, $primary);
-    //     box-shadow: 2px 2px 3px $grey-place-shdw;
-    //     transform: scale(1);
-    //     transition: all 400ms;
-    //     &:hover {
-    //         transform: scale(1.01);
-    //         background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));
-    //         box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
-    //     }        
-    // }    
 }
 
 .gradient {
@@ -113,7 +83,7 @@ input::placeholder {
 }
 
 .functioning {
-    margin: 50px 0px 70px;
+    margin: 50px 0px 35px;
     padding: 0px 24px;
     &__threebuttons {
         display: flex;
@@ -157,7 +127,7 @@ input::placeholder {
     }
     &__title {        
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         @include mobile-only {
             text-align: start;
         }

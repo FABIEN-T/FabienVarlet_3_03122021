@@ -1,3 +1,10 @@
+// ***********************************************************************************************
+//                                  BOUTON .gradient
+// - dans index.html : "Explorez nos restaurants" 
+// - dans lapalettedugout.html - lanoteenchantee.html - alafrançaise.html - ledelicedessens.html :
+// "Commander" : 
+// ***********************************************************************************************
+
 .gradient {        
         padding: 15px;
         margin: 0px auto;
@@ -15,6 +22,17 @@
             box-shadow: -1px -1px 6px $grey-icon, 2px 2px 3px $grey-icon;
         }        
     }    
+
+
+
+    
+// ***********************************************************************************************
+//                                  BOUTON .heart
+// - dans index.html / <section class="list-menus"> 
+// - dans lapalettedugout.html - lanoteenchantee.html - alafrançaise.html - ledelicedessens.html / 
+// <div class="page__restaurant">
+
+// ***********************************************************************************************
 
 .heart {
     position: relative;

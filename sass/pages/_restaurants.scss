@@ -121,7 +121,7 @@
         margin-bottom: 15px;;
         border-radius: 20px;        
         overflow: hidden;
-        box-shadow: 3px 3px 3px shader-grey(93%);
+        box-shadow: 3px 3px 3px $grey-box-shdw;
         background-color: $white;
         &:hover {
             & .choice__check--rollover {

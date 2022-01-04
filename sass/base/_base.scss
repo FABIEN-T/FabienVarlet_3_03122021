@@ -1,11 +1,26 @@
+// ***********************************************************************************************
+//                              @import GOOGLE FONTS
+// ***********************************************************************************************
+
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300,family=Roboto:wght@500,family=Shrikhand&display=swap');
 
+
+
+// ***********************************************************************************************
+//                              @import Déclaration Icônes Font Awesome
+// ***********************************************************************************************
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
+
+
+// ***********************************************************************************************
+//                             Déclarations générales
+// ***********************************************************************************************
 
 body {
     max-width: 1920px;
@@ -14,6 +29,7 @@ body {
 
 main {
     margin: 0px auto;
+}
 
 a {
     color: $black;

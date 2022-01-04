@@ -136,17 +136,6 @@ a {
   -webkit-animation: disk ease-in-out 3000ms 300ms both;
           animation: disk ease-in-out 3000ms 300ms both;
 }
-.loader__disk2 {
-  top: 17vh;
-  width: 270px;
-  height: 270px;
-  position: fixed;
-  opacity: 1;
-  border: #99E2D0 solid 12px;
-  border-radius: 50%;
-  -webkit-animation: disk2 ease-in-out 3000ms 300ms both;
-          animation: disk2 ease-in-out 3000ms 300ms both;
-}
 .loader__title {
   margin-top: 110px;
   font-family: Shrikhand, Arial, Helvetica, sans-serif;
@@ -154,6 +143,17 @@ a {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 2px #353535;
+}
+.loader__disktwo {
+  top: 17vh;
+  width: 270px;
+  height: 270px;
+  position: fixed;
+  opacity: 1;
+  border: #99E2D0 solid 12px;
+  border-radius: 50%;
+  -webkit-animation: disktwo ease-in-out 3000ms 300ms both;
+          animation: disktwo ease-in-out 3000ms 300ms both;
 }
 .loader__icon {
   position: absolute;
@@ -269,7 +269,7 @@ a {
             transform: rotate(360deg);
   }
 }
-@-webkit-keyframes disk2 {
+@-webkit-keyframes disktwo {
   0% {
     opacity: 1;
     -webkit-transform: scale(0) rotate(-0.5turn);
@@ -291,7 +291,7 @@ a {
             transform: rotate(-1.6turn);
   }
 }
-@keyframes disk2 {
+@keyframes disktwo {
   0% {
     opacity: 1;
     -webkit-transform: scale(0) rotate(-0.5turn);
@@ -571,7 +571,7 @@ input::placeholder {
 }
 
 .functioning {
-  margin: 50px 0px 70px;
+  margin: 50px 0px 35px;
   padding: 0px 24px;
 }
 .functioning__threebuttons {
@@ -643,7 +643,7 @@ input::placeholder {
 }
 .functioning__title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   .functioning__title {
@@ -982,8 +982,8 @@ input::placeholder {
   margin-bottom: 15px;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 3px 3px 3px #ededed;
-          box-shadow: 3px 3px 3px #ededed;
+  -webkit-box-shadow: 3px 3px 3px #ececec;
+          box-shadow: 3px 3px 3px #ececec;
   background-color: white;
 }
 .choice__container:hover .choice__check--rollover {
