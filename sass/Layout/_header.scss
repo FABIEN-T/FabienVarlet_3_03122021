@@ -1,14 +1,16 @@
 .header {
+    max-width: 1920px;
     background-color: $white;
+    position: relative;
     &__icon {
         font-size: clamp(0.5rem, 11vw, 1.2rem);
         position: absolute;
         left: 20px;
-        top: 20px;
+        top: 18px;
     }
     &__title {
         margin: 0px;
-        padding: 0.4rem;
+        padding: 0.6rem;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
         font-size: clamp(0.5rem, 11vw, 2rem);
         text-align: center;

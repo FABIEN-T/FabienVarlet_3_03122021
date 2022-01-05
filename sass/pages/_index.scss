@@ -3,7 +3,6 @@
     box-shadow: inset 0px 3px 3px $grey-place-shdw; 
     &__place {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 200px;
@@ -23,7 +22,7 @@
     border: solid $grey-place-bkgd 0px;
     border-radius: 20px;
     font-size: 1rem;  
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input:focus{
@@ -93,38 +92,38 @@ input::placeholder {
             flex-direction: column;
         }
     }
-    &__button {
-        cursor: pointer;
-        display: flex;
-        flex: 30%;
-        max-width: 30%;
-        align-items: center;
-        margin: 0px auto 30px;
-        padding: 10px 0px;
+    // &__button {
+    //     cursor: pointer;
+    //     display: flex;
+    //     flex: 30%;
+    //     max-width: 30%;
+    //     align-items: center;
+    //     margin: 0px auto 30px;
+    //     padding: 10px 0px;
         
-        @include tablette {
-            width: 50%;
-            max-width: 50%;
-            padding: 10px 0px 10px 0px;
-        }
-        @include mobile-only {
-            width: 100%;
-            max-width: 100%;
-            padding: 10px 0px 10px 0px;
-        }
+    //     @include tablette {
+    //         width: 50%;
+    //         max-width: 50%;
+    //         padding: 10px 0px 10px 0px;
+    //     }
+    //     @include mobile-only {
+    //         width: 100%;
+    //         max-width: 100%;
+    //         padding: 10px 0px 10px 0px;
+    //     }
         
-        border-radius: 20px;
-        background-color: $grey-bkgd;
-        box-shadow: -1px -1px 18px $grey-place-bkgd, 2px 2px 3px $grey-place-bkgd;
-        transform: scale(1);
-        transition: transform 400ms;
-        &:hover {
-            background-color: pastel($primary);
-            .functioning__icon--color {color: $primary;}
-            transform: scale(1.02);
-            box-shadow: -3px -3px 6px $grey-place-bkgd, 4px 4px 6px $grey-place-bkgd;
-        }    
-    }
+    //     border-radius: 20px;
+    //     background-color: $grey-bkgd;
+    //     box-shadow: -1px -1px 18px $grey-place-bkgd, 2px 2px 3px $grey-place-bkgd;
+    //     transform: scale(1);
+    //     transition: transform 400ms;
+    //     &:hover {
+    //         background-color: pastel($primary);
+    //         .functioning__icon--color {color: $primary;}
+    //         transform: scale(1.02);
+    //         box-shadow: -3px -3px 6px $grey-place-bkgd, 4px 4px 6px $grey-place-bkgd;
+    //     }    
+    // }
     &__title {        
         text-align: center;
         margin-bottom: 30px;
@@ -211,7 +210,7 @@ input::placeholder {
         background-color: $tertiary;
         color: dark($tertiary);
     } 
-    &__textheart {
+    &__text-heart {
         display: flex;
         justify-content: space-between;
         padding: 16px 30px 16px 10px;

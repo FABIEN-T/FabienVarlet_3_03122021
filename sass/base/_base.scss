@@ -2,11 +2,7 @@
 //                              @import GOOGLE FONTS
 // ***********************************************************************************************
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300,family=Roboto:wght@500,family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
 
 
 
@@ -22,8 +18,15 @@
 //                             Déclarations générales
 // ***********************************************************************************************
 
+body, html {
+    height:100%;
+}
+
 body {
+    // résolution Full HD maxi
     max-width: 1920px;
+    // marges latérales sur auto pour centrer la page
+    // sur des résolutions supérieures au Full HD
     margin: 0px auto;
 }
 

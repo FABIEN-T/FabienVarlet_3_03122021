@@ -24,10 +24,10 @@
     // tournant dans le sens horaire
     &__disk {
         top: 17vh;
-        width: 270px;
-        height: 270px;        
+        width: 250px;
+        height: 250px;        
         position: fixed;
-        border: $tertiary solid 12px;
+        border: $tertiary solid 10px;
         border-radius: 50%;
         background-image: linear-gradient(30deg, $secondary, $primary);
         animation: disk ease-in-out $duration $delay both;
@@ -47,11 +47,11 @@
     // tournant dans le sens anti-horaire
     &__disktwo {
         top: 17vh;
-        width: 270px;
-        height: 270px;        
+        width: 250px;
+        height: 250px;        
         position: fixed;
         opacity: 1;
-        border: $tertiary solid 12px;
+        border: $tertiary solid 10px;
         border-radius: 50%;
         animation: disktwo ease-in-out $duration $delay both;
     }
@@ -67,7 +67,7 @@
         background-image: linear-gradient(30deg, $secondary, $primary);
         border-radius: 20px;
         padding: 0.8rem;
-        font-size: 4rem;
+        font-size: 3.5rem;
         animation:  iconshake ease-in-out $duration $delay both;
     }  
     
@@ -132,7 +132,7 @@
 }
 
 // Animation du Disque invisible porteur de l'icône couverts (fas fa-utensils)
-// tournant dans le sens anti-horairedu fond blanc :
+// tournant dans le sens anti-horaire :
 // disparaît à 80% avant la disparition du fond blanc
 @keyframes disktwo {
     0% {
@@ -153,7 +153,9 @@
     }
 }
 
-
+// Animation de l'icône couverts (fas fa-utensils)
+// grandissant, tournant sur lui même et autour du disque invisible (disktwo)
+// shake de 50% à 
 @keyframes iconshake {
     0% {
         transform: scale(0) rotate(0deg);
