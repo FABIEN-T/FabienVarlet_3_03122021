@@ -1,55 +1,63 @@
 .banner {
     background-color: $grey-place-bkgd;
-    box-shadow: inset 0px 3px 3px $grey-place-shdw; 
+    box-shadow: inset 0px 3px 3px $grey-place-shdw;
+    box-sizing: border-box;
     &__place {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 200px;
+        width: 173px;
+        // width: 200px;
         margin: 0px auto;
         padding: 18px 0px;
     }
     &__icon {
-        margin-right: 10px;
+        // margin-right: 10px;
         margin-bottom: 4px;
         color: $footer;
     }
+    &__city {
+        box-sizing: border-box;
+        margin-left: 15px;
+        font-weight: 500;
+        // width: 151px;
+    }
 }
 
-#search{
-    color: $footer;  
-    background-color: $grey-place-bkgd;
-    border: solid $grey-place-bkgd 0px;
-    border-radius: 20px;
-    font-size: 1rem;  
-    font-weight: 500;
-}
+// #search{
+//     color: $footer;  
+//     background-color: $grey-place-bkgd;
+//     border: solid $grey-place-bkgd 0px;
+//     border-radius: 20px;
+//     font-size: 1rem;  
+//     font-weight: 500;
+// }
 
-input:focus{
-    outline: none;
-    border-radius: 20px;
-    background-color: $grey-bkgd;
-}
-input::placeholder {
-    outline: none;
-    border-radius: 20px;
-    background-color: $grey-place-bkgd;
-}
+// input:focus{
+//     outline: none;
+//     border-radius: 20px;
+//     background-color: $grey-bkgd;
+// }
+// input::placeholder {
+//     outline: none;
+//     border-radius: 20px;
+//     background-color: $grey-place-bkgd;
+// }
 
-::-webkit-input-placeholder{     /* WebKit, Blink, Edge */
-    color: $footer;
-    opacity: 1;
-    border-radius: 20px;
-    padding-left: 4px;
-    background-color: $grey-bkgd;
-}
-::-moz-placeholder{    /* Mozilla */
+// ::-webkit-input-placeholder{     /* WebKit, Blink, Edge */
+//     color: $footer;
+//     opacity: 1;
+//     border-radius: 20px;
+//     padding-left: 4px;
+//     background-color: $grey-bkgd;
+// }
+// ::-moz-placeholder{    /* Mozilla */
     
-    color: $footer;
-    opacity: 1;
-    border-radius: 20px;
-    background-color: $grey-place-bkgd;
-}
+//     color: $footer;
+//     opacity: 1;
+//     border-radius: 20px;
+//     background-color: $grey-place-bkgd;
+// }
 
 
 
