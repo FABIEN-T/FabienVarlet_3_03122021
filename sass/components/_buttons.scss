@@ -15,7 +15,7 @@
         background: linear-gradient(170deg, $secondary, $primary);
         box-shadow: 2px 2px 3px $grey-place-shdw;
         transform: scale(1);
-        transition: all 400ms;
+        transition: all ease-in-out 400ms;
         &:hover {
             transform: scale(1.01);
             background: linear-gradient(170deg, lighten($secondary, 4%), lighten($primary, 4%));

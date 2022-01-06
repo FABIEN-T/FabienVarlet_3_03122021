@@ -739,8 +739,8 @@ a {
           box-shadow: 2px 2px 3px #c2c2c2;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
+  -webkit-transition: all ease-in-out 400ms;
+  transition: all ease-in-out 400ms;
 }
 .gradient:hover {
   -webkit-transform: scale(1.01);
@@ -1073,8 +1073,12 @@ input::placeholder {
     min-width: 100%;
   }
 }
-.menu:hover {
-  color: #9356DC;
+.menu__flyover:hover .menu__text-heart {
+  padding-left: 16px;
+}
+.menu__flyover:hover .menu__text {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .menu__image {
   position: relative;
@@ -1108,7 +1112,17 @@ input::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 30px 16px 10px;
-  background-color: white;
+  background: white;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+.menu__text {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform ease-in-out 400ms;
+  transition: -webkit-transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms;
+  transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
 }
 .menu__title {
   margin: 0px auto;
