@@ -8,6 +8,7 @@
     justify-content: center;
     position: relative;
     z-index: 1;
+    // box-sizing: content-box;
     animation: loader ease-in-out $duration $delay forwards;
     &__background {
         width: 100%;
@@ -23,6 +24,7 @@
     // Spinner : Disque avec dégradé et titre "ohmyfood"
     // tournant dans le sens horaire
     &__disk {
+        box-sizing: content-box;
         top: 17vh;
         width: 250px;
         height: 250px;        
@@ -46,6 +48,7 @@
     // Disque invisible porteur de l'icône couverts (fas fa-utensils)
     // tournant dans le sens anti-horaire
     &__disktwo {
+        box-sizing: content-box;
         top: 17vh;
         width: 250px;
         height: 250px;        
@@ -60,6 +63,7 @@
     // grandissant, tournant sur lui même et autour du disque invisible (disktwo)
     // shake en fin d'animation 
     &__icon {
+        // box-sizing: content-box;
         position: absolute;
         left: -20px;
         color: $white;

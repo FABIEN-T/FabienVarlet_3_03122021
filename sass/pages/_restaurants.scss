@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     &__image {
-        box-sizing: border-box;
+        // box-sizing: border-box;
         z-index: -1;
         margin-bottom: -50px;
         overflow: hidden;
@@ -57,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     padding: 15px 48px 0px 20px;
     &__title {
         flex-grow: 0;
@@ -72,7 +72,7 @@
     flex-direction: column;
     flex: 32%;
     max-width: 32%;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     margin: 10px 0px 0px 0px;
     @include tablette {
         flex: 49%;
@@ -164,7 +164,7 @@
 
     }
     &__check {
-        box-sizing: border-box;
+        // box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;

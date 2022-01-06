@@ -1,7 +1,7 @@
 .banner {
     background-color: $grey-place-bkgd;
     box-shadow: inset 0px 3px 3px $grey-place-shdw;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     &__place {
         display: flex;
         justify-content: flex-start;
@@ -16,7 +16,7 @@
         color: $footer;
     }
     &__city {
-        box-sizing: border-box;
+        // box-sizing: border-box;
         font-weight: 500;
     }
 }
@@ -92,7 +92,7 @@ input::placeholder {
     &__threebuttons {
         display: flex;
         justify-content: space-between;
-        box-sizing: border-box;
+        // box-sizing: border-box;
         @include tablette {
             flex-direction: column;
         }

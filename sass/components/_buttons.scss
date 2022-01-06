@@ -5,7 +5,8 @@
 // "Commander" : 
 // ***********************************************************************************************
 
-.gradient {        
+.gradient {  
+        box-sizing: content-box;      
         padding: 15px;
         margin: 0px auto;
         width: 185px; 
@@ -96,7 +97,7 @@
         background-image: linear-gradient(30deg, $secondary, $primary);
         transform: scale(0);
         transform-origin: bottom;
-        transition: transform ease-in-out 700ms;
+        transition: transform ease-in-out 500ms;
     }
     &__icon {
         z-index: 2;
