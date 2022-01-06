@@ -867,6 +867,68 @@ a {
   font-weight: 500;
 }
 
+#search {
+  color: #353535;
+  background-color: #eaeaea;
+  border: solid #eaeaea 0px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+
+input::-webkit-input-placeholder {
+  outline: none;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
+input::-moz-placeholder {
+  outline: none;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
+input:-ms-input-placeholder {
+  outline: none;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
+input::-ms-input-placeholder {
+  outline: none;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
+input::placeholder {
+  outline: none;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #353535;
+  opacity: 1;
+  border-radius: 20px;
+  padding-left: 4px;
+  background-color: #f6f6f6;
+}
+
+::-moz-placeholder {
+  /* Mozilla */
+  color: #353535;
+  opacity: 1;
+  border-radius: 20px;
+  background-color: #eaeaea;
+}
+
 .presentation {
   text-align: center;
   display: -webkit-box;
