@@ -109,6 +109,9 @@
     cursor: pointer;
     &__load {
         animation: animation-choice ease-in-out $choice-duration backwards;
+        // Boucle "for" de 1 à la variable $choice-number (4 en l'occurence) :
+        // incrémenter la classe .choice__load--$i
+        // et multilplier le retard de cette classe par la variable de la boucle $i,
         @for $i from 1 through $choice-number {
             &--#{$i} {
                 animation-delay: $delay * $i;

@@ -191,13 +191,13 @@ input::placeholder {
     box-shadow: 3px 3px 3px $grey-place-bkgd;
     overflow: hidden;
     &__flyover:hover {
-        .menu__text-heart {
-            padding-left: 16px;
-        }
+        // .menu__text-heart {
+        //     padding-left: 16px;
+        // }
         .menu__text {
             // color: $primary;
             // color: dark($primary);
-            transform: scale(1.03);
+            transform: scale(1.04);
         }
     }
     &__image {
@@ -222,17 +222,19 @@ input::placeholder {
         border-radius: 3px;
         background-color: $tertiary;
         color: dark($tertiary);
+        // color: darken($color: $tertiary, $amount: 50%);
     } 
     &__text-heart {
         display: flex;
         justify-content: space-between;
         padding: 16px 30px 16px 10px;
         background: $white;
-        transition: all ease-in-out 300ms;
+        transition: all ease-in-out 200ms;
     }
     &__text {
-        transform: scale(1);  
-        transition: transform ease-in-out 400ms; 
+        transform: scale(1); 
+        transform-origin: left; 
+        transition: transform ease-in-out 300ms; 
     }
     &__title {
         margin: 0px auto; 

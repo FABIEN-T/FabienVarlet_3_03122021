@@ -1075,12 +1075,9 @@ input::placeholder {
     min-width: 100%;
   }
 }
-.menu__flyover:hover .menu__text-heart {
-  padding-left: 16px;
-}
 .menu__flyover:hover .menu__text {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 .menu__image {
   position: relative;
@@ -1115,16 +1112,18 @@ input::placeholder {
           justify-content: space-between;
   padding: 16px 30px 16px 10px;
   background: white;
-  -webkit-transition: all ease-in-out 300ms;
-  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
 }
 .menu__text {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform ease-in-out 400ms;
-  transition: -webkit-transform ease-in-out 400ms;
-  transition: transform ease-in-out 400ms;
-  transition: transform ease-in-out 400ms, -webkit-transform ease-in-out 400ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform ease-in-out 300ms;
+  transition: -webkit-transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms;
+  transition: transform ease-in-out 300ms, -webkit-transform ease-in-out 300ms;
 }
 .menu__title {
   margin: 0px auto;
