@@ -18,14 +18,16 @@ plus.
 * Tout le code doit être versionné sur GitHub et le site devra être accessible sur
 Github Pages une fois terminé.
 
-```
+```html
 <!-- voici un exemple html -->
 <div class="functioning__button">
     <div class="functioning__round">1</div>
-        <i class="fas fa-mobile-alt functioning__icon functioning__icon--color"></i>
-        <p class="functionning__paragraph">Choisissez un restaurant</p>                
-    </div>
+    <i class="fas fa-mobile-alt functioning__icon functioning__icon--color"></i>
+    <p class="functionning__paragraph">Choisissez un restaurant</p>                
+</div>
+```
 
+```scss
 <!-- voici un exemple scss -->
 .banner {
     background-color: $grey-place-bkgd;
