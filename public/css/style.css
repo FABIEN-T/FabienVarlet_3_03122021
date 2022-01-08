@@ -347,7 +347,7 @@ body, html {
   height: 100%;
 }
 
-body {
+body, .page {
   max-width: 1920px;
   margin: 0px auto;
 }
@@ -738,7 +738,6 @@ a {
           box-sizing: content-box;
   padding: 15px;
   margin: 0px auto;
-  width: 185px;
   color: white;
   font-weight: 500;
   border-radius: 30px;
@@ -969,6 +968,7 @@ input::placeholder {
 
 .gradient {
   margin: 40px auto;
+  width: 185px;
 }
 
 .functioning {
@@ -1366,7 +1366,6 @@ input::placeholder {
   padding: 0px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .choice__precision {
   margin: 5px 0px 0px;
@@ -1374,7 +1373,6 @@ input::placeholder {
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
 }
 .choice__price-check {
   display: -webkit-box;
