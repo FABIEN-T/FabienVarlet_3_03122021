@@ -9,10 +9,10 @@
         top: 18px;
     }
     &__title {
-        // width: fit-content;
         margin: 0px;
         padding: 0.6rem;
         font-family: Shrikhand, Arial, Helvetica, sans-serif;
+        // Adaptation de la taille du titre quand la largeur de la page en mobile devient inférieure à la taill originale du titre
         font-size: clamp(0.5rem, 11vw, 2rem);
         text-align: center;
     }

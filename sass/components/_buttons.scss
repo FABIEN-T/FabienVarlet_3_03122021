@@ -9,7 +9,6 @@
         box-sizing: content-box;      
         padding: 15px;
         margin: 0px auto;
-        // width: 185px; 
         color: $white;
         font-weight: 500;
         border-radius: 30px; 
@@ -42,7 +41,6 @@
         align-items: center;
         margin: 0px auto 30px;
         padding: 10px 0px;
-            
         @include tablette {
             width: 50%;
             max-width: 50%;
@@ -52,8 +50,7 @@
             width: 100%;
             max-width: 100%;
             padding: 10px 0px 10px 0px;
-        }   
-           
+        }  
         border-radius: 20px;
         background-color: $grey-bkgd;
         box-shadow: -1px -1px 18px $grey-place-bkgd, 2px 2px 3px $grey-place-bkgd;
@@ -72,7 +69,7 @@
     
 // ***********************************************************************************************
 //                                  BOUTON .heart
-// - dans index.html / <section class="list-menus"> 
+// - dans la section Restaurants (index.html) / <section class="list-menus"> 
 // - dans lapalettedugout.html - lanoteenchantee.html - alafrançaise.html - ledelicedessens.html / 
 // <div class="page__restaurant">
 // ***********************************************************************************************
@@ -92,8 +89,8 @@
         right: 0px;
         bottom: 3px;
         font-size: 1.5rem;
+        color: transparent;
         background-clip: text;
-        color: transparent; 
         background-image: linear-gradient(30deg, $secondary, $primary);
         transform: scale(0);
         transform-origin: bottom;

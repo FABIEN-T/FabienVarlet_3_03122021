@@ -343,11 +343,7 @@ template {
   display: none;
 }
 
-body, html {
-  height: 100%;
-}
-
-body, .page {
+body {
   max-width: 1920px;
   margin: 0px auto;
 }
@@ -450,9 +446,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  z-index: 1;
-  -webkit-animation: loader ease-in-out 3000ms 300ms forwards;
-          animation: loader ease-in-out 3000ms 300ms forwards;
+  -webkit-animation: loader ease-in-out 3000ms 300ms both;
+          animation: loader ease-in-out 3000ms 300ms both;
 }
 .loader__background {
   width: 100%;
@@ -468,8 +463,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: back ease-in-out 3000ms 300ms forwards;
-          animation: back ease-in-out 3000ms 300ms forwards;
+  -webkit-animation: back ease-in-out 3000ms 300ms both;
+          animation: back ease-in-out 3000ms 300ms both;
 }
 .loader__disk {
   -webkit-box-sizing: content-box;
@@ -500,7 +495,7 @@ a {
   height: 250px;
   position: fixed;
   opacity: 1;
-  border: #99E2D0 solid 10px;
+  border: transparent solid 10px;
   border-radius: 50%;
   -webkit-animation: disktwo ease-in-out 3000ms 300ms both;
           animation: disktwo ease-in-out 3000ms 300ms both;
@@ -545,9 +540,6 @@ a {
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 1;
-  }
   78% {
     opacity: 1;
   }
@@ -560,9 +552,6 @@ a {
 }
 @keyframes back {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 1;
   }
   78% {
@@ -824,9 +813,9 @@ a {
   right: 0px;
   bottom: 3px;
   font-size: 1.5rem;
+  color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
-  color: transparent;
   background-image: linear-gradient(30deg, #FF79DA, #9356DC);
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -857,7 +846,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 177px;
+  width: 171px;
   margin: 0px auto;
   padding: 18px 0px;
 }
@@ -1112,8 +1101,6 @@ input::placeholder {
           justify-content: space-between;
   padding: 16px 30px 16px 10px;
   background: white;
-  -webkit-transition: all ease-in-out 200ms;
-  transition: all ease-in-out 200ms;
 }
 .menu__text {
   -webkit-transform: scale(1);
@@ -1366,6 +1353,7 @@ input::placeholder {
   padding: 0px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .choice__precision {
   margin: 5px 0px 0px;
@@ -1373,6 +1361,7 @@ input::placeholder {
   font-weight: 300;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .choice__price-check {
   display: -webkit-box;

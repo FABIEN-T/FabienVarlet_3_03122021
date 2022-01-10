@@ -1,12 +1,15 @@
+//*********************************
+// Champ de recherche de la ville
+//*********************************
+
 .banner {
     background-color: $grey-place-bkgd;
     box-shadow: inset 0px 3px 3px $grey-place-shdw;
-    // box-sizing: border-box;
     &__place {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 177px;
+        width: 171px;
         margin: 0px auto;
         padding: 18px 0px;
     }
@@ -16,7 +19,6 @@
         color: $footer;
     }
     &__city {
-        // box-sizing: border-box;
         font-weight: 500;
     }
 }
@@ -29,7 +31,6 @@
     font-size: 1rem;  
     font-weight: 500;
 }
-
 input:focus{
     outline: none;
     border-radius: 20px;
@@ -40,7 +41,6 @@ input::placeholder {
     border-radius: 20px;
     background-color: $grey-place-bkgd;
 }
-
 ::-webkit-input-placeholder{     /* WebKit, Blink, Edge */
     color: $footer;
     opacity: 1;
@@ -49,7 +49,6 @@ input::placeholder {
     background-color: $grey-bkgd;
 }
 ::-moz-placeholder{    /* Mozilla */
-    
     color: $footer;
     opacity: 1;
     border-radius: 20px;
@@ -58,6 +57,9 @@ input::placeholder {
 
 
 
+//*********************************
+// Section Présentation
+//*********************************
 
 .presentation {    
     text-align: center;
@@ -81,11 +83,17 @@ input::placeholder {
         }
     }
 }
-
+// Positionnement du bouton .gradient "Explorer nos restaurants"
 .gradient {
     margin: 40px auto;
     width: 185px;
 }
+
+
+
+//*********************************
+// Section Fonctionnement
+//*********************************
 
 .functioning {
     margin: 50px 0px 35px;
@@ -93,46 +101,15 @@ input::placeholder {
     &__threebuttons {
         display: flex;
         justify-content: space-between;
-        // box-sizing: border-box;
+        // Tablette : passage en mode colonne des 3 items de description du fonctionnement
         @include tablette {
             flex-direction: column;
         }
     }
-    // &__button {
-    //     cursor: pointer;
-    //     display: flex;
-    //     flex: 30%;
-    //     max-width: 30%;
-    //     align-items: center;
-    //     margin: 0px auto 30px;
-    //     padding: 10px 0px;
-        
-    //     @include tablette {
-    //         width: 50%;
-    //         max-width: 50%;
-    //         padding: 10px 0px 10px 0px;
-    //     }
-    //     @include mobile-only {
-    //         width: 100%;
-    //         max-width: 100%;
-    //         padding: 10px 0px 10px 0px;
-    //     }
-        
-    //     border-radius: 20px;
-    //     background-color: $grey-bkgd;
-    //     box-shadow: -1px -1px 18px $grey-place-bkgd, 2px 2px 3px $grey-place-bkgd;
-    //     transform: scale(1);
-    //     transition: transform 400ms;
-    //     &:hover {
-    //         background-color: pastel($primary);
-    //         .functioning__icon--color {color: $primary;}
-    //         transform: scale(1.02);
-    //         box-shadow: -3px -3px 6px $grey-place-bkgd, 4px 4px 6px $grey-place-bkgd;
-    //     }    
-    // }
     &__title {        
         text-align: center;
         margin-bottom: 30px;
+        // Mobile : le titres h2 passent de la justification centrée à la justification à gauche
         @include mobile-only {
             text-align: start;
         }
@@ -156,6 +133,11 @@ input::placeholder {
     }
 }
 
+
+
+//*********************************
+// Section Restaurant
+//*********************************
 .list-menus {
     background-color: $grey-bkgd;
     padding: 30px 24px 40px;
@@ -174,15 +156,17 @@ input::placeholder {
 }
  
 .menu {
+    // Desktop : cards sur 1 ligne
     flex: 24%;
     max-width: 24%;
-    
+    // Tablette : cards sur 2 lignes
     @include tablette {
         text-align: start;
         flex-direction: row;
         flex: 49%;
         max-width: 49%;
     }
+    // Mobile : cards sur 4 lignes
     @include mobile-only {
         min-width: 100%;
     }  
@@ -191,13 +175,9 @@ input::placeholder {
     border-radius: 20px;
     box-shadow: 3px 3px 3px $grey-place-bkgd;
     overflow: hidden;
+    //Animation du texte au survol
     &__flyover:hover {
-        // .menu__text-heart {
-        //     padding-left: 16px;
-        // }
         .menu__text {
-            // color: $primary;
-            // color: dark($primary);
             transform: scale(1.04);
         }
     }
@@ -223,14 +203,12 @@ input::placeholder {
         border-radius: 3px;
         background-color: $tertiary;
         color: dark($tertiary);
-        // color: darken($color: $tertiary, $amount: 50%);
     } 
     &__text-heart {
         display: flex;
         justify-content: space-between;
         padding: 16px 30px 16px 10px;
         background: $white;
-        transition: all ease-in-out 200ms;
     }
     &__text {
         transform: scale(1); 
@@ -245,7 +223,7 @@ input::placeholder {
         font-weight: 400;
         margin: 2px auto 0px;
     }     
-    
+    //Etiquettes nouveau seulement sur les 2 premiers restaurants
     &:nth-child(n+3):nth-child(-n+4) .menu__new{
         display: none;
     }

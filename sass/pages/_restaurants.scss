@@ -1,8 +1,11 @@
+//*********************************
+// Organisation de la page 
+//*********************************
+
 .page {
     display: flex;
     flex-direction: column;
     &__image {
-        // box-sizing: border-box;
         z-index: -1;
         margin-bottom: -50px;
         overflow: hidden;
@@ -14,7 +17,6 @@
                 transform: translateY(0%);
                 object-fit: cover;
                 width: auto;
-                
             }
             @media screen and (max-width: 352px) {
                 height: 250px;
@@ -22,6 +24,7 @@
             }
         }
     }
+    
     &__restaurant {
         position: relative;
         display: flex;
@@ -31,7 +34,7 @@
         border-radius: 50px 50px 0px 0px;
         background-color: $grey-bkgd;
     }
-
+    // Section menu : Entrées - Plats - Desserts
     &__elements {
         display: flex;
         flex-direction: row;
@@ -46,18 +49,17 @@
             flex-direction: column;
         }
     }
-
+    // Positionnement du bouton .gradient "Commandez" 
     &__button {
         text-align: center;
         margin: -10px auto 20px;
     }
 }
-
+// Nom du restaurant et bouton .heart
 .name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // box-sizing: border-box;
     padding: 15px 48px 0px 20px;
     &__title {
         flex-grow: 0;
@@ -66,13 +68,12 @@
         margin: 0px;
     }  
 }
-
+// Entrées Plats Desserts
 .type {
     display: flex;
     flex-direction: column;
     flex: 32%;
     max-width: 32%;
-    // box-sizing: border-box;
     margin: 10px 0px 0px 0px;
     @include tablette {
         flex: 49%;
@@ -89,7 +90,7 @@
         width: 48px;
     }
 }
-
+// Animation de l'cône check pour matérialiser la validation de l'utilisateur
 @keyframes animation-choice {
     0% {
         transform: translateY(20px);
@@ -104,20 +105,20 @@
         opacity: 1;
     }   
 }
-
+// Configuration d'un item
 .choice {
     cursor: pointer;
+    // <div class="choice__load choice__load--$i">
+    // Boucle de l'apparition des menus : gestion des delays
     &__load {
         animation: animation-choice ease-in-out $choice-duration backwards;
-        // Boucle "for" de 1 à la variable $choice-number (4 en l'occurence) :
-        // incrémenter la classe .choice__load--$i
-        // et multilplier le retard de cette classe par la variable de la boucle $i,
         @for $i from 1 through $choice-number {
             &--#{$i} {
-                animation-delay: $delay * $i;
+                animation-delay: $choice-delay * $i;
             }
         }
     }
+    // Contient le texte et la div englobant price et check
     &__container {
         display: flex;
         justify-content: space-between;
@@ -135,6 +136,7 @@
             }
         }
     }
+    // Englobe title et précision
     &__text {
         display: flex;
         flex-direction: column;
@@ -146,7 +148,7 @@
         padding: 0px;
         white-space: nowrap;
         text-overflow: ellipsis;
-        // overflow: hidden;
+        overflow: hidden;
     }
     &__precision {
         margin: 5px 0px 0px;
@@ -154,8 +156,9 @@
         font-weight: 300;
         white-space: nowrap;
         text-overflow: ellipsis;
-        // overflow: hidden;
+            overflow: hidden;
     }
+    // Englobe price et check
     &__price-check {
         display: flex;
     }
@@ -164,10 +167,8 @@
         align-items: flex-end;
         padding: 0.8rem 1.3rem;
         font-weight: bold;
-
     }
     &__check {
-        // box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;

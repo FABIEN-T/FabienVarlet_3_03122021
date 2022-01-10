@@ -22,6 +22,7 @@
         @include tablette {
             margin: 0px;
         }
+        // Mobile : les items en mode vertical
         @include mobile-only {
             flex-direction: column;
         }

@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        
+        <!-- Animation au chargement de la page index.html puis disparaît-->
         <div class="loader">
             <div class="loader__background">
                 <div class="loader__disk">
@@ -21,15 +21,15 @@
             </div>
         </div>
 
-        <!-- <div class="page"> -->
+        <!-- Page chargée après animation -->
+        
         <header class="header">
             <h1 class="header__title">ohmyfood</h1>
         </header>
 
-        
-
         <main>
 
+            <!-- Champ de recherche la ville -->
             <div class="banner"> 
                 <div class="banner__place">
                     <i class="fas fa-map-marker-alt banner__icon"></i>
@@ -42,16 +42,18 @@
                 </div>
             </div>
 
+            <!-- Présentation -->
             <section class="presentation">    
                 <h2 class="presentation__title">Réservez le menu qui vous convient</h2>
                 <div>
-                    <a href="#">
+                    <a href="#restaurants"> <!-- Ancre amenant à la section Restaurant -->
                         <p class="presentation__paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                         <div class="gradient">Explorer nos restaurants</div>                    
                     </a>
                 </div>
             </section>
 
+            <!-- Fonctionnement -->
             <section class="functioning">
                 <h2 class="functioning__title">Fonctionnement</h2>
 
@@ -79,16 +81,18 @@
 
             </section>
 
+            <!-- Section Restaurants -->
             <section class="list-menus">
-                <h2 class="list-menus__title">Restaurants</h2>
-                
+                <h2 id=restaurants class="list-menus__title">Restaurants</h2>
+                <!-- Restaurant 1 -->
                 <div class="list-menus__card">                    
                     <div class="menu">
                         <a href="lapalettedugout.html">
                             <div class="menu__flyover">
                                 <div class="menu__image"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/></div>
                                 <div class="menu__new">Nouveau</div>
-                                <div class="menu__text-heart">
+                                <!-- Cartouche blanc texte et coeur -->
+                                <div class="menu__text-heart"> 
                                     <div class="menu__text">
                                         <h3 class="menu__title">La palette du goût</h3>
                                         <p class="menu__paragraph">Menilmontant</p>
@@ -101,7 +105,7 @@
                             </div>
                         </a>
                     </div>
-                                        
+                    <!-- Restaurant 2 -->                    
                     <div class="menu">
                         <a href="lanoteenchantee.html">
                             <div class="menu__flyover">
@@ -120,7 +124,7 @@
                             </div>
                         </a>
                     </div>
-
+                    <!-- Restaurant 3 -->
                     <div class="menu">
                         <a href="alafrançaise.html">
                             <div class="menu__flyover">
@@ -139,7 +143,7 @@
                             </div>
                         </a>
                     </div>
-
+                    <!-- Restaurant 4 -->
                     <div class="menu">
                         <a href="ledelicedessens.html">
                             <div class="menu__flyover">
@@ -172,7 +176,7 @@
                 <li class="footer__item"> <a href="mailto:contact@ohmyfood.com" class="footer__link">Contact</a> </li>
             </ul>                          
         </footer>
-    <!-- </div> -->
+        
     </body>
     
 </html>

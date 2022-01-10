@@ -3,13 +3,10 @@
 // ***********************************************************************************************
 
 .loader {
-    // Fond blanc et organisation de la div
     display: flex;
     justify-content: center;
     position: relative;
-    z-index: 1;
-    // box-sizing: content-box;
-    animation: loader ease-in-out $duration $delay forwards;
+    animation: loader ease-in-out $duration $delay both;
     &__background {
         width: 100%;
         height: 100%;
@@ -18,7 +15,7 @@
         justify-content: center;
         position: fixed;
         align-items: center;
-        animation: back ease-in-out $duration $delay forwards;
+        animation: back ease-in-out $duration $delay both;
     }
 
     // Spinner : Disque avec dégradé et titre "ohmyfood"
@@ -54,7 +51,7 @@
         height: 250px;        
         position: fixed;
         opacity: 1;
-        border: $tertiary solid 10px;
+        border: transparent solid 10px;
         border-radius: 50%;
         animation: disktwo ease-in-out $duration $delay both;
     }
@@ -63,7 +60,6 @@
     // grandissant, tournant sur lui même et autour du disque invisible (disktwo)
     // shake en fin d'animation 
     &__icon {
-        // box-sizing: content-box;
         position: absolute;
         left: -20px;
         color: $white;
@@ -74,7 +70,6 @@
         font-size: 3.5rem;
         animation:  iconshake ease-in-out $duration $delay both;
     }  
-    
 }
 
 // Changement de l'ordre des calques
@@ -98,9 +93,6 @@
     0% {
         opacity: 1;
     } 
-    50% {
-        opacity: 1;
-    }
     78% {
         opacity: 1;
     }

@@ -18,11 +18,7 @@
 //                             Déclarations générales
 // ***********************************************************************************************
 
-body, html {
-    height:100%;
-}
-
-body, .page {
+body {
     // résolution Full HD maxi
     max-width: 1920px;
     // marges latérales sur auto pour centrer la page
@@ -31,6 +27,7 @@ body, .page {
 }
 
 main {
+    // flex-grow: 1;
     margin: 0px auto;
 }
 
