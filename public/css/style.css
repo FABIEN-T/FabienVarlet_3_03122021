@@ -804,8 +804,8 @@ a {
   cursor: pointer;
 }
 .heart:hover .heart__icon-solid--flyover {
-  -webkit-transform: scale(0.84);
-          transform: scale(0.84);
+  -webkit-transform: scale(0.82);
+          transform: scale(0.82);
 }
 .heart__icon-solid {
   z-index: 1;
@@ -827,7 +827,7 @@ a {
   transition: transform ease-in-out 500ms, -webkit-transform ease-in-out 500ms;
 }
 .heart__icon {
-  z-index: 2;
+  z-index: 5;
   font-size: 1.5rem;
 }
 

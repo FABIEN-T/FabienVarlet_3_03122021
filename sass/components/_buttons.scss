@@ -80,7 +80,7 @@
     cursor: pointer;
     &:hover {
         .heart__icon-solid--flyover {
-            transform: scale(0.84);
+            transform: scale(0.82);
         }       
     }
     &__icon-solid {
@@ -97,7 +97,7 @@
         transition: transform ease-in-out 500ms;
     }
     &__icon {
-        z-index: 2;
+        z-index: 5;
         font-size: 1.5rem; 
     }
 }
