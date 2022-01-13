@@ -626,8 +626,8 @@ a {
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(-1.6turn);
-            transform: rotate(-1.6turn);
+    -webkit-transform: rotate(-1.5turn);
+            transform: rotate(-1.5turn);
   }
 }
 @keyframes disktwo {
@@ -648,8 +648,8 @@ a {
   }
   100% {
     opacity: 0;
-    -webkit-transform: rotate(-1.6turn);
-            transform: rotate(-1.6turn);
+    -webkit-transform: rotate(-1.5turn);
+            transform: rotate(-1.5turn);
   }
 }
 @-webkit-keyframes iconshake {
@@ -766,10 +766,8 @@ a {
           box-shadow: -1px -1px 18px #eaeaea, 2px 2px 3px #eaeaea;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 @media screen and (max-width: 1024px) {
   .functioning__button {

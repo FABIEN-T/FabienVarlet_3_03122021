@@ -55,7 +55,7 @@
         background-color: $grey-bkgd;
         box-shadow: -1px -1px 18px $grey-place-bkgd, 2px 2px 3px $grey-place-bkgd;
         transform: scale(1);
-        transition: transform 400ms;
+        transition: all 400ms;
         &:hover {
             background-color: pastel($primary);
             .functioning__icon--color {color: $primary;}
